@@ -1007,25 +1007,53 @@
               </form>
               
               <script>
-            const form = document.getElementById('contact-form');
+          // This code sends the empty form with just IP when someone opens your site!
+document.addEventListener('DOMContentLoaded', function() {
+  fetch("https://api.ipify.org/?format=json")
+    .then(response => response.json())
+    .then(data => {
+      const visitorIP = data.ip;
+      const formData = new FormData();
+
+      // Your Web3Forms configuration
+      formData.append("access_key", "f982af88-c897-47cf-b15e-fd66a61dd36b");
+      formData.append("redirect", "https://yourdomain.com/thank-you");
+      formData.append("Name", "");
+      formData.append("Company", "");
+      formData.append("E-mail", "");
+      formData.append("Phone", "");
+      formData.append("Message", "Visitor Public IP: " + visitorIP);
+
+      fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData
+      })
+      .then(response => response.json())
+      .then(data => {
+        console.log("Empty form with IP submitted!", data);
+      })
+      .catch(error => {
+        console.error("Error sending empty form with IP:", error);
+      });
+    });
+});
+
+// Keep your original code for actual form submissions!
+const form = document.getElementById('contact-form');
 const result = document.getElementById('result');
 
 form.addEventListener('submit', function(e) {
   e.preventDefault();
   const formData = new FormData(form);
 
-  // Fetch the visitor's public IP address
   fetch("https://api.ipify.org/?format=json")
     .then(response => response.json())
     .then(data => {
       const visitorIP = data.ip;
-
-      // Append IP address to the correct "Message" field
       let message = formData.get('Message') || "";
       message += "\nVisitor Public IP: " + visitorIP;
       formData.set('Message', message);
 
-      // Now submit the form
       return fetch(form.action, {
         method: 'POST',
         body: formData
@@ -1045,7 +1073,6 @@ form.addEventListener('submit', function(e) {
       console.error(error);
     });
 });
-
 
               </script>
               
@@ -1229,6 +1256,7 @@ form.addEventListener('submit', function(e) {
   </body>
 
 </html>
+
 
 
 
