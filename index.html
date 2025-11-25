@@ -1007,25 +1007,25 @@
               </form>
               
               <script>
-                const form = document.getElementById('contact-form');
+            const form = document.getElementById('contact-form');
 const result = document.getElementById('result');
 
 form.addEventListener('submit', function(e) {
   e.preventDefault();
   const formData = new FormData(form);
-  
+
   // Fetch the visitor's public IP address
   fetch("https://api.ipify.org/?format=json")
     .then(response => response.json())
     .then(data => {
       const visitorIP = data.ip;
 
-      // Append the IP address to the message field (assuming your form has a field named 'message')
-      let message = formData.get('message') || "";
+      // Append IP address to the correct "Message" field
+      let message = formData.get('Message') || "";
       message += "\nVisitor Public IP: " + visitorIP;
-      formData.set('message', message);
+      formData.set('Message', message);
 
-      // Now submit the form with the updated message
+      // Now submit the form
       return fetch(form.action, {
         method: 'POST',
         body: formData
@@ -1229,6 +1229,7 @@ form.addEventListener('submit', function(e) {
   </body>
 
 </html>
+
 
 
 
