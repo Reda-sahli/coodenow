@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- SEO Title & Meta -->
+  <title>Sahli Reda || Développeur Full-Stack &amp; UI/UX Designer</title>
+  <meta name="description"
+    content="Portfolio de Sahli Reda - Développeur Full-Stack | Développement Web & Mobile (Java / Android) | UI/UX Designer. Rigoureux et passionné par les systèmes web et mobiles évolutifs.">
+  <meta name="keywords"
+    content="Sahli Reda, Développeur Full-Stack, Web & Mobile, Java, Android, React 19, Next.js, Node.js, PostgreSQL, UI/UX Designer, Meknès, Maroc">
+  <meta name="author" content="Sahli Reda">
+
+  <!-- OpenGraph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Sahli Reda || Développeur Full-Stack &amp; UI/UX Designer">
+  <meta property="og:description"
+    content="Développement Web & Mobile (Java / Android) • Conception d'applications logistiques et intelligentes.">
+  <meta property="og:image" content="assets/images/sahlireda.jpeg">
+
+
+
+  <!-- Google Fonts & Phosphor Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- Ambient Lighting Effects -->
+  <div class="ambient-lighting">
+    <div class="glow-ambient-left"></div>
+    <div class="glow-ambient-right"></div>
+    <div class="glow-ambient-bottom"></div>
+  </div>
+
+  <!-- FLOATING TOP ICON DOCK (EXACT AS SCREENSHOT) -->
+  <nav class="floating-dock-nav" id="dockNav">
+    <a href="#home" class="dock-item-link active" data-tooltip="Accueil" aria-label="Accueil">
+      <i class="ph-bold ph-house-simple"></i>
+    </a>
+    <a href="#projects" class="dock-item-link" data-tooltip="Projets" aria-label="Projets">
+      <i class="ph-bold ph-compass"></i>
+    </a>
+    <a href="#skills" class="dock-item-link" data-tooltip="Compétences" aria-label="Compétences">
+      <i class="ph-bold ph-code"></i>
+    </a>
+    <a href="#experience" class="dock-item-link" data-tooltip="Expérience" aria-label="Expérience">
+      <i class="ph-bold ph-briefcase"></i>
+    </a>
+    <a href="#education" class="dock-item-link" data-tooltip="Éducation" aria-label="Éducation">
+      <i class="ph-bold ph-graduation-cap"></i>
+    </a>
+    <a href="#certifications" class="dock-item-link" data-tooltip="Certifications" aria-label="Certifications">
+      <i class="ph-bold ph-certificate"></i>
+    </a>
+    <a href="#contact" class="dock-item-link" data-tooltip="Contact" aria-label="Contact">
+      <i class="ph-bold ph-envelope"></i>
+    </a>
+
+    <div class="dock-divider"></div>
+
+    <!-- Theme Switcher -->
+    <button id="themeToggle" class="dock-action-btn" data-tooltip="Thème" aria-label="Changer le thème">
+      <i class="ph-bold ph-sun"></i>
+    </button>
+
+    <!-- GitHub -->
+    <a href="https://github.com/Reda-sahli" target="_blank" rel="noopener noreferrer" class="dock-item-link"
+      data-tooltip="GitHub" aria-label="GitHub">
+      <i class="ph-bold ph-github-logo"></i>
+    </a>
+  </nav>
+
+  <!-- =========================================================================
+       HERO FRONT SCREEN (EXACT INSPIRATION LAYOUT)
+       ========================================================================= -->
+  <section id="home" class="hero-front-wrapper">
+    <div class="hero-front-content">
+
+      <!-- Status Pill Badge -->
+      <div class="status-pill-badge">
+        <div class="status-dot-cyan"></div>
+        <span>À la recherche d'un stage estival &amp; opportunités Web/Mobile</span>
+      </div>
+
+      <!-- Huge Dual-Gradient Headline -->
+      <h1 class="hero-main-title">
+        <span class="name-part-1">Sahli</span>
+        <span class="name-part-2">Reda</span>
+      </h1>
+
+      <!-- Role / Bio Subtitles from CV -->
+      <p class="hero-role-headline">
+        Développeur Full-Stack | Développement Web &amp; Mobile (Java / Android)
+      </p>
+      <p class="hero-sub-detail">
+        Jeune diplômé en Génie Informatique • Expérience Full-Stack (React 19, Node.js, Express, PostgreSQL) &amp;
+        Mobile (Java, Android, Kotlin) • UI/UX Designer.
+      </p>
+
+      <!-- Centered CTA Buttons (Download CV + Contact) -->
+      <div class="hero-btn-row">
+        <!-- Prominent Glowing Download CV Button linking to real PDF -->
+        <a href="assets/CV_Sahli_Reda.pdf" download="CV_Sahli_Reda.pdf" class="btn-pill-download"
+          title="Télécharger le CV de Sahli Reda (PDF)">
+          <i class="ph-bold ph-download-simple"></i>
+          <span>Download CV</span>
+        </a>
+
+        <!-- Contact Button -->
+        <a href="#contact" class="btn-pill-contact">
+          <i class="ph-bold ph-envelope-simple"></i>
+          <span>Me Contacter</span>
+          <i class="ph-bold ph-arrow-up-right" style="font-size: 0.9rem;"></i>
+        </a>
+      </div>
+
+      <!-- Minimalist Social Icons Row -->
+      <div class="hero-social-links">
+        <a href="https://github.com/Reda-sahli" target="_blank" rel="noopener noreferrer" class="hero-social-item"
+          title="GitHub">
+          <i class="ph-bold ph-github-logo"></i>
+        </a>
+        <a href="mailto:coodenow@gmail.com" class="hero-social-item" title="Email: coodenow@gmail.com">
+          <i class="ph-bold ph-envelope"></i>
+        </a>
+        <a href="tel:+212631368295" class="hero-social-item" title="Téléphone: +212 6 31 36 82 95">
+          <i class="ph-bold ph-phone-call"></i>
+        </a>
+        <a href="https://www.instagram.com/sahli_reda_/" target="_blank" rel="noopener noreferrer"
+          class="hero-social-item" title="Instagram">
+          <i class="ph-bold ph-instagram-logo"></i>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       EXPANDED MAIN CONTENT AREA
+       ========================================================================= -->
+  <div class="main-container">
+
+    <!-- SECTION: FEATURED PROJECTS & ENGAGEMENTS -->
+    <section id="projects" class="content-section">
+      <div class="section-tag-row">
+        <div class="section-pill-label">
+          <i class="ph-bold ph-briefcase"></i>
+          <span>PROJETS &amp; ENGAGEMENTS</span>
+        </div>
+        <h2 class="section-title">Projets Réalisés &amp; Associatifs</h2>
+        <p class="section-desc">Conception d'applications web/mobiles métier, plateformes associatives et solutions
+          technologiques.</p>
+      </div>
+
+      <!-- Filter Chips -->
+      <div class="project-filter-row">
+        <button class="filter-chip active" data-filter="all">Tous les Projets</button>
+        <button class="filter-chip" data-filter="fullstack">Applications Web &amp; ERP</button>
+        <button class="filter-chip" data-filter="associatif">Associatif &amp; Concours</button>
+        <button class="filter-chip" data-filter="design">Design &amp; 3D</button>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="projects-masonry-grid">
+
+        <!-- PROJECT 1: EXCEL CLEARANCE EXPRESS (PFE) WITH DIRECT LINK https://excelclearance.com/ -->
+        <article class="project-bento-card wide" data-category="fullstack">
+          <div class="project-image-box">
+            <img src="assets/images/excel-clearance.svg" alt="Excel Clearance Express">
+            <div class="project-quick-overlay">
+              <a href="https://excelclearance.com/" target="_blank" rel="noopener noreferrer" class="btn-pill-download"
+                style="padding: 8px 18px; font-size: 0.85rem; margin-right: 8px;">
+                <i class="ph-bold ph-arrow-square-out"></i> Visiter le Site
+              </a>
+              <button class="btn-pill-contact" style="padding: 8px 18px; font-size: 0.85rem;"
+                data-project-trigger="excel-clearance">
+                <i class="ph-bold ph-eye"></i> Détails
+              </button>
+            </div>
+          </div>
+          <div class="project-info-box">
+            <div class="project-pill-tags">
+              <span class="pill-tag">React 19 + TailwindCSS</span>
+              <span class="pill-tag purple">Node.js / Express.js</span>
+              <span class="pill-tag pink">PostgreSQL (40 API Endpoints)</span>
+            </div>
+            <h3 class="project-card-heading">
+              <a href="https://excelclearance.com/" target="_blank" rel="noopener noreferrer"
+                style="display: inline-flex; align-items: center; gap: 8px;">
+                Excel Clearance Express — Stage PFE
+                <i class="ph-bold ph-arrow-up-right" style="font-size: 1.1rem; color: #38bdf8;"></i>
+              </a>
+            </h3>
+            <p class="project-card-summary">
+              Conception et développement de bout en bout d’une application web de gestion logistique et de facturation
+              douanière à Casablanca. Implémentation d'une API REST (40 endpoints), sécurité JWT/Bcrypt avec contrôle
+              d'accès selon le rôle (RBAC), calcul des taxes en temps réel et dashboard statistique.
+            </p>
+            <div class="project-card-actions">
+              <a href="https://excelclearance.com/" target="_blank" rel="noopener noreferrer" class="project-view-link">
+                <span>https://excelclearance.com/</span>
+                <i class="ph-bold ph-arrow-square-out"></i>
+              </a>
+              <button class="project-view-link" data-project-trigger="excel-clearance"
+                style="color: var(--text-muted);">
+                <span>Voir la Fiche</span>
+                <i class="ph-bold ph-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 2: MEDCHAINS (AL AKHAWAYN UNIVERSITY) -->
+        <article class="project-bento-card" data-category="associatif">
+          <div class="project-image-box">
+            <img src="assets/images/medchain.svg" alt="MedChains Santé-Tech">
+            <div class="project-quick-overlay">
+              <button class="btn-pill-download" style="padding: 8px 18px; font-size: 0.85rem;"
+                data-project-trigger="medchain">
+                <i class="ph-bold ph-eye"></i> Aperçu Détaillé
+              </button>
+            </div>
+          </div>
+          <div class="project-info-box">
+            <div class="project-pill-tags">
+              <span class="pill-tag pink">Santé-Tech</span>
+              <span class="pill-tag purple">TBH Program • AUI</span>
+              <span class="pill-tag">Compétition 2025</span>
+            </div>
+            <h3 class="project-card-heading">Projet MedChains (Santé-Tech)</h3>
+            <p class="project-card-summary">
+              Collaboration intensive sur un projet entrepreneurial technologique à fort impact appliqué au secteur
+              médical. Représentation du Centre TBH lors de la compétition à Al Akhawayn University (Ifrane).
+            </p>
+            <div class="project-card-actions">
+              <button class="project-view-link" data-project-trigger="medchain">
+                <span>Détails</span>
+                <i class="ph-bold ph-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 3: UMI - MUN -->
+        <article class="project-bento-card" data-category="associatif">
+          <div class="project-image-box">
+            <img src="assets/images/umi-mun.jpg" alt="UMI Model United Nations"
+              style="object-fit: cover; object-position: center top;">
+            <div class="project-quick-overlay">
+              <a href="https://github.com/Reda-sahli/umi-mun" target="_blank" rel="noopener noreferrer"
+                class="btn-pill-download" style="padding: 8px 18px; font-size: 0.85rem; margin-right: 8px;">
+                <i class="ph-bold ph-github-logo"></i> GitHub
+              </a>
+              <button class="btn-pill-contact" style="padding: 8px 18px; font-size: 0.85rem;"
+                data-project-trigger="umi-mun">
+                <i class="ph-bold ph-eye"></i> Détails
+              </button>
+            </div>
+          </div>
+          <div class="project-info-box">
+            <div class="project-pill-tags">
+              <span class="pill-tag">Site Web Officiel</span>
+              <span class="pill-tag purple">Next.js &amp; React</span>
+              <span class="pill-tag">umi-mun.online</span>
+            </div>
+            <h3 class="project-card-heading">
+              <a href="https://github.com/Reda-sahli/umi-mun" target="_blank" rel="noopener noreferrer"
+                style="display: inline-flex; align-items: center; gap: 8px;">
+                UMI MUN (Model United Nations)
+                <i class="ph-bold ph-arrow-up-right" style="font-size: 1.1rem; color: #38bdf8;"></i>
+              </a>
+            </h3>
+            <p class="project-card-summary">
+              Création du site web officiel du UMI MUN (umi-mun.online), réalisation de vidéos de formation multilingues
+              (français, anglais, arabe) et participation à la simulation diplomatique.
+            </p>
+            <div class="project-card-actions">
+              <a href="https://github.com/Reda-sahli/umi-mun" target="_blank" rel="noopener noreferrer"
+                class="project-view-link">
+                <i class="ph-bold ph-github-logo"></i>
+                <span>Code Source</span>
+              </a>
+              <button class="project-view-link" data-project-trigger="umi-mun" style="color: var(--text-muted);">
+                <span>Voir la Fiche</span>
+                <i class="ph-bold ph-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 4: CLUB IVR & FHEMTECH 3D -->
+        <article class="project-bento-card" data-category="design">
+          <div class="project-image-box">
+            <img src="assets/images/ivr-club.svg" alt="Club IVR Université Moulay Ismaïl">
+            <div class="project-quick-overlay">
+              <button class="btn-pill-download" style="padding: 8px 18px; font-size: 0.85rem;"
+                data-project-trigger="ivr-club">
+                <i class="ph-bold ph-eye"></i> Aperçu Détaillé
+              </button>
+            </div>
+          </div>
+          <div class="project-info-box">
+            <div class="project-pill-tags">
+              <span class="pill-tag purple">Animation 3D</span>
+              <span class="pill-tag">Logo FHEMTECH</span>
+              <span class="pill-tag pink">Club IVR</span>
+            </div>
+            <h3 class="project-card-heading">Club IVR — Designer &amp; Organisateur</h3>
+            <p class="project-card-summary">
+              Co-création d'événements Tech et d'ateliers de code, conception de la charte graphique et du logo officiel
+              FHEMTECH (robotique, IA, web) et réalisation d’une vidéo animée en 3D.
+            </p>
+            <div class="project-card-actions">
+              <button class="project-view-link" data-project-trigger="ivr-club">
+                <span>Détails</span>
+                <i class="ph-bold ph-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 5: GAMEATHON FACTICITY 2025 (UNESCO) -->
+        <article class="project-bento-card" data-category="associatif">
+          <div class="project-image-box">
+            <img src="assets/images/dept-informatique.svg" alt="Gameathon FactiCITY UNESCO">
+            <div class="project-quick-overlay">
+              <button class="btn-pill-download" style="padding: 8px 18px; font-size: 0.85rem;"
+                data-project-trigger="gameathon">
+                <i class="ph-bold ph-eye"></i> Aperçu Détaillé
+              </button>
+            </div>
+          </div>
+          <div class="project-info-box">
+            <div class="project-pill-tags">
+              <span class="pill-tag">UNESCO Maghreb</span>
+              <span class="pill-tag purple">Jeux Éducatifs</span>
+              <span class="pill-tag pink">Bouznika</span>
+            </div>
+            <h3 class="project-card-heading">Gameathon FactiCITY 2025</h3>
+            <p class="project-card-summary">
+              Conception en équipe de jeux numériques éducatifs de sensibilisation à la désinformation et à l'esprit
+              critique sous l’égide du Ministère de la Jeunesse et de l'UNESCO Maghreb.
+            </p>
+            <div class="project-card-actions">
+              <button class="project-view-link" data-project-trigger="gameathon">
+                <span>Détails</span>
+                <i class="ph-bold ph-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 6: PHOTOGRAPHY CLUB FSM & SMARTALIM (SIAM) -->
+        <article class="project-bento-card" data-category="design">
+          <div class="project-image-box">
+            <img src="assets/images/recaravan.svg" alt="Prix du Design UMI & SIAM">
+            <div class="project-quick-overlay">
+              <button class="btn-pill-download" style="padding: 8px 18px; font-size: 0.85rem;"
+                data-project-trigger="smartalim">
+                <i class="ph-bold ph-eye"></i> Aperçu Détaillé
+              </button>
+            </div>
+          </div>
+          <div class="project-info-box">
+            <div class="project-pill-tags">
+              <span class="pill-tag pink">Prix du Design</span>
+              <span class="pill-tag purple">SIAM 2025</span>
+              <span class="pill-tag">Smartalim</span>
+            </div>
+            <h3 class="project-card-heading">Prix du Design &amp; Plateforme Smartalim</h3>
+            <p class="project-card-summary">
+              Lauréat du Prix du Design lors du concours « UMI Out Of The Box » (« Lumière sur l'Inattendu ») et
+              représentant de la plateforme numérique agricole Smartalim au stand de l'UMI (SIAM 2025).
+            </p>
+            <div class="project-card-actions">
+              <button class="project-view-link" data-project-trigger="smartalim">
+                <span>Détails</span>
+                <i class="ph-bold ph-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- SECTION: SKILLS / COMPÉTENCES DU CV -->
+    <section id="skills" class="content-section">
+      <div class="section-tag-row">
+        <div class="section-pill-label">
+          <i class="ph-bold ph-code"></i>
+          <span>COMPÉTENCES TECHNIQUES</span>
+        </div>
+        <h2 class="section-title">Technologies &amp; Outils</h2>
+        <p class="section-desc">Technologies maîtrisées issues du parcours académique et des projets professionnels.</p>
+      </div>
+
+      <div class="skills-quad-grid">
+
+        <!-- WEB DEV -->
+        <div class="skill-box-card">
+          <div class="skill-box-header">
+            <div class="skill-icon-wrap"><i class="ph-bold ph-browsers"></i></div>
+            <h3 class="skill-box-title">Développement Web</h3>
+          </div>
+          <div class="skill-pills-wrap">
+            <span class="skill-badge"><i class="ph-bold ph-atom"></i> React 19</span>
+            <span class="skill-badge"><i class="ph-bold ph-cpu"></i> Next.js</span>
+            <span class="skill-badge"><i class="ph-bold ph-paint-brush"></i> TailwindCSS</span>
+            <span class="skill-badge"><i class="ph-bold ph-file-js"></i> JavaScript (ES6+)</span>
+            <span class="skill-badge"><i class="ph-bold ph-file-html"></i> HTML5 / CSS3</span>
+            <span class="skill-badge"><i class="ph-bold ph-lightning"></i> Vite</span>
+          </div>
+        </div>
+
+        <!-- BACKEND & DB -->
+        <div class="skill-box-card">
+          <div class="skill-box-header">
+            <div class="skill-icon-wrap pink"><i class="ph-bold ph-database"></i></div>
+            <h3 class="skill-box-title">Back-End &amp; Bases de Données</h3>
+          </div>
+          <div class="skill-pills-wrap">
+            <span class="skill-badge"><i class="ph-bold ph-tree-structure"></i> Node.js</span>
+            <span class="skill-badge"><i class="ph-bold ph-server"></i> Express.js</span>
+            <span class="skill-badge"><i class="ph-bold ph-hard-drives"></i> PostgreSQL</span>
+            <span class="skill-badge"><i class="ph-bold ph-plugs"></i> API REST (40+ endpoints)</span>
+            <span class="skill-badge"><i class="ph-bold ph-shield-check"></i> JWT &amp; Bcrypt</span>
+            <span class="skill-badge"><i class="ph-bold ph-key"></i> Contrôle d'accès RBAC</span>
+          </div>
+        </div>
+
+        <!-- MOBILE DEV -->
+        <div class="skill-box-card">
+          <div class="skill-box-header">
+            <div class="skill-icon-wrap"><i class="ph-bold ph-device-mobile"></i></div>
+            <h3 class="skill-box-title">Développement Mobile</h3>
+          </div>
+          <div class="skill-pills-wrap">
+            <span class="skill-badge"><i class="ph-bold ph-coffee"></i> Java</span>
+            <span class="skill-badge"><i class="ph-bold ph-diamonds-four"></i> Kotlin</span>
+            <span class="skill-badge"><i class="ph-bold ph-android-logo"></i> Android Studio</span>
+            <span class="skill-badge"><i class="ph-bold ph-devices"></i> Mobile Architecture</span>
+          </div>
+        </div>
+
+        <!-- DESIGN & MEDIAS -->
+        <div class="skill-box-card">
+          <div class="skill-box-header">
+            <div class="skill-icon-wrap pink"><i class="ph-bold ph-bezier-curve"></i></div>
+            <h3 class="skill-box-title">Design &amp; Médias</h3>
+          </div>
+          <div class="skill-pills-wrap">
+            <span class="skill-badge"><i class="ph-bold ph-figma-logo"></i> UI/UX Design &amp; Maquettage</span>
+            <span class="skill-badge"><i class="ph-bold ph-pen-nib"></i> Adobe Illustrator</span>
+            <span class="skill-badge"><i class="ph-bold ph-image"></i> Adobe Photoshop</span>
+            <span class="skill-badge"><i class="ph-bold ph-film-strip"></i> After Effects &amp; Vidéo</span>
+            <span class="skill-badge"><i class="ph-bold ph-cube"></i> Animation 3D (Blender)</span>
+            <span class="skill-badge"><i class="ph-bold ph-palette"></i> Identité Visuelle</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: EXPÉRIENCE PROFESSIONNELLE (ALTERNATING TIMELINE) -->
+    <section id="experience" class="education-section-block">
+      <div class="section-tag-row">
+        <div class="section-pill-label">
+          <i class="ph-bold ph-briefcase"></i>
+          <span>PARCOURS</span>
+        </div>
+        <h2 class="section-title dual-gradient">
+          <span class="title-gradient-left">Expérience </span><span class="title-gradient-right">Professionnelle</span>
+        </h2>
+      </div>
+
+      <div class="education-timeline-container">
+
+        <!-- ITEM 1: LEFT -->
+        <div class="edu-timeline-item left">
+          <div class="edu-timeline-node"></div>
+          <div class="edu-glass-card">
+            <div class="edu-card-top">
+              <h3 class="edu-degree-title">Stage Professionnel de Fin d’Études — Développeur Full-Stack</h3>
+              <span class="edu-year-tag"><i class="ph-bold ph-calendar-blank"></i> 03/2026 — 06/2026</span>
+            </div>
+            <div class="edu-institution-name">
+              <a href="https://excelclearance.com/" target="_blank" rel="noopener noreferrer"
+                style="display: inline-flex; align-items: center; gap: 6px; color: #38bdf8;">
+                EXCEL CLEARANCE — Casablanca, Maroc
+                <i class="ph-bold ph-arrow-square-out"></i>
+              </a>
+            </div>
+            <p class="edu-specialization-text">
+              <strong>Application Web Métier</strong> • Conception et développement complet d'une solution de gestion
+              logistique et de facturation douanière accessible sur <a href="https://excelclearance.com/"
+                target="_blank" style="color: #38bdf8; text-decoration: underline;">excelclearance.com</a>. Stack :
+              React 19, TailwindCSS, Node.js, Express.js, PostgreSQL, API REST (40 endpoints), sécurité JWT/Bcrypt et
+              dashboard analytique.
+            </p>
+          </div>
+        </div>
+
+        <!-- ITEM 2: RIGHT -->
+        <div class="edu-timeline-item right">
+          <div class="edu-timeline-node"></div>
+          <div class="edu-glass-card">
+            <div class="edu-card-top">
+              <h3 class="edu-degree-title">Photographe &amp; Designer Graphique Freelance</h3>
+              <span class="edu-year-tag"><i class="ph-bold ph-calendar-blank"></i> Freelance</span>
+            </div>
+            <div class="edu-institution-name">Clients &amp; Entreprises</div>
+            <p class="edu-specialization-text">
+              <strong>Création Visuelle &amp; UI</strong> • Création d’identités visuelles pour marques, chartes
+              graphiques complètes, production photo/vidéo et maquettage fonctionnel d'interfaces applicatives.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION: ÉDUCATION (EXACT INSPIRATION TIMELINE DESIGN)
+         ========================================================================= -->
+    <section id="education" class="education-section-block">
+      <!-- Section Header -->
+      <div class="section-tag-row">
+        <div class="section-pill-label">
+          <div class="status-dot-cyan"></div>
+          <span>BACKGROUND</span>
+        </div>
+        <h2 class="section-title dual-gradient">
+          <span class="title-gradient-left">Edu</span><span class="title-gradient-right">cation</span>
+        </h2>
+      </div>
+
+      <!-- Center Alternating Timeline (Exact as in CV) -->
+      <div class="education-timeline-container">
+
+        <!-- TIMELINE ITEM 1: LEFT (Licence Fondamentale) -->
+        <div class="edu-timeline-item left">
+          <div class="edu-timeline-node"></div>
+          <div class="edu-glass-card">
+            <div class="edu-card-top">
+              <h3 class="edu-degree-title">Licence Fondamentale en Génie Informatique</h3>
+              <span class="edu-year-tag"><i class="ph-bold ph-book-open"></i> 2025 — 2026</span>
+            </div>
+            <div class="edu-institution-name">Université Moulay Ismaïl — Faculté des Sciences, Meknès</div>
+            <p class="edu-specialization-text">
+              <strong>Spécialisation</strong> • Génie Logiciel, Systèmes Distribués, Conception de Bases de données
+              &amp; Développement Web Moderne.
+            </p>
+          </div>
+        </div>
+
+        <!-- TIMELINE ITEM 2: RIGHT (DEUG) -->
+        <div class="edu-timeline-item right">
+          <div class="edu-timeline-node"></div>
+          <div class="edu-glass-card">
+            <div class="edu-card-top">
+              <h3 class="edu-degree-title">Diplôme d’Études Universitaires Générales (DEUG)</h3>
+              <span class="edu-year-tag"><i class="ph-bold ph-book-open"></i> 2022 — 2025</span>
+            </div>
+            <div class="edu-institution-name">Université Moulay Ismaïl — Filière Génie Informatique, Meknès</div>
+            <p class="edu-specialization-text">
+              <strong>Tronc Commun</strong> • Algorithmes, Programmation, Structures de Données, Architecture des
+              Ordinateurs &amp; Réseaux.
+            </p>
+          </div>
+        </div>
+
+        <!-- TIMELINE ITEM 3: LEFT (Baccalauréat) -->
+        <div class="edu-timeline-item left">
+          <div class="edu-timeline-node"></div>
+          <div class="edu-glass-card">
+            <div class="edu-card-top">
+              <h3 class="edu-degree-title">Baccalauréat — Option Sciences Physiques</h3>
+              <span class="edu-year-tag"><i class="ph-bold ph-book-open"></i> 2021 — 2022</span>
+            </div>
+            <div class="edu-institution-name">Meknès, Maroc</div>
+            <p class="edu-specialization-text">
+              <strong>Formation</strong> • Mathématiques, Sciences Physiques, Logique &amp; Raisonnement Scientifique.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: CERTIFICATIONS & FORMATIONS (WITH AUTHENTIC BCDIPLOMA CERTIFICATE LINKS) -->
+    <section id="certifications" class="content-section">
+      <div class="section-tag-row">
+        <div class="section-pill-label">
+          <i class="ph-bold ph-certificate"></i>
+          <span>FORMATIONS &amp; ATTESTATIONS VÉRIFIÉES</span>
+        </div>
+        <h2 class="section-title">Certifications &amp; Formations</h2>
+        <p class="section-desc">Formations internationales, certifications d'employabilité et attestations vérifiables.
+        </p>
+      </div>
+
+      <div class="cert-cards-grid">
+
+        <!-- CERTIFICATE 1: HTML, CSS, and JavaScript for Web Developers (WITH AUTHENTIC VERIFICATION LINK) -->
+        <a href="https://certificate.bcdiploma.com/check/3A403DE97929409360F6169418B8F62F43AFF2B94A4EA1421D27AFE1E9734484UHJuRkJFUEQrMnVnb0QxSElxQU1oS24yWGM3akszNHFrMmptSlgzeTlCM3F4bURB"
+          target="_blank" rel="noopener noreferrer" class="cert-card"
+          title="Vérifier le Certificat en ligne (BCdiploma)">
+          <div class="cert-badge-top">
+            <span class="pill-tag">Certificat Vérifié</span>
+            <i class="ph-bold ph-arrow-square-out" style="color: #38bdf8; font-size: 1.2rem;"></i>
+          </div>
+          <h3 class="cert-title">HTML, CSS, and JavaScript for Web Developers</h3>
+          <p class="cert-issuer">Johns Hopkins University • IFIC-AUF</p>
+          <div
+            style="font-size: 0.78rem; color: #34d399; display: flex; align-items: center; gap: 5px; margin-top: auto;">
+            <i class="ph-bold ph-seal-check"></i>
+            <span>Attestation BCdiploma Authentifiée ↗</span>
+          </div>
+        </a>
+
+        <!-- CERTIFICATE 2: Réussir son employabilité à l'ère du digital (AUF) (WITH AUTHENTIC VERIFICATION LINK) -->
+        <a href="https://certificate.bcdiploma.com/check/3A403DE97929409360F6169418B8F62F43AFF2B94A4EA1421D27AFE1E9734484UHJuRkJFUEQrMnVnb0QxSElxQU1oS24yWGM3akszNHFrMmptSlgzeTlCM3F4bURB"
+          target="_blank" rel="noopener noreferrer" class="cert-card"
+          title="Vérifier le Certificat IFIC-AUF (BCdiploma)">
+          <div class="cert-badge-top">
+            <span class="pill-tag pink">Certificat AUF Vérifié</span>
+            <i class="ph-bold ph-arrow-square-out" style="color: #f472b6; font-size: 1.2rem;"></i>
+          </div>
+          <h3 class="cert-title">Réussir son employabilité à l’ère du digital (13 h)</h3>
+          <p class="cert-issuer">AUF — Centre d’Employabilité Francophone de Meknès (11/2025)</p>
+          <div
+            style="font-size: 0.78rem; color: #34d399; display: flex; align-items: center; gap: 5px; margin-top: auto;">
+            <i class="ph-bold ph-seal-check"></i>
+            <span>Attestation BCdiploma Authentifiée ↗</span>
+          </div>
+        </a>
+
+        <!-- CERTIFICATE 3: Photography in Research School (Università di Napoli Federico II) -->
+        <div class="cert-card">
+          <div class="cert-badge-top">
+            <span class="pill-tag purple">Recherche &amp; Photo</span>
+            <i class="ph-bold ph-certificate" style="color: #c084fc;"></i>
+          </div>
+          <h3 class="cert-title">Photography in Research School (2e édition)</h3>
+          <p class="cert-issuer">Università degli Studi di Napoli Federico II • SULIEIA (12/2025)</p>
+        </div>
+
+        <!-- CERTIFICATE 4: Lean Six Sigma -->
+        <div class="cert-card">
+          <div class="cert-badge-top">
+            <span class="pill-tag">Qualité &amp; Process</span>
+            <i class="ph-bold ph-certificate" style="color: #38bdf8;"></i>
+          </div>
+          <h3 class="cert-title">Lean Six Sigma Yellow Belt Certification</h3>
+          <p class="cert-issuer">ECLEE</p>
+        </div>
+
+        <!-- CERTIFICATE 5: Innovation Camp -->
+        <div class="cert-card">
+          <div class="cert-badge-top">
+            <span class="pill-tag purple">Innovation</span>
+            <i class="ph-bold ph-certificate" style="color: #c084fc;"></i>
+          </div>
+          <h3 class="cert-title">Certificat de Réussite, Innovation Camp</h3>
+          <p class="cert-issuer">Injaz Al Maghrib &amp; Crédit Agricole du Maroc (CAM)</p>
+        </div>
+
+        <!-- CERTIFICATE 6: VSG & 3D -->
+        <div class="cert-card">
+          <div class="cert-badge-top">
+            <span class="pill-tag pink">Business &amp; 3D</span>
+            <i class="ph-bold ph-certificate" style="color: #f472b6;"></i>
+          </div>
+          <h3 class="cert-title">Ventures Strategy Game &amp; Impression 3D</h3>
+          <p class="cert-issuer">Al Akhawayn University &amp; Faculté des Sciences (Club IVR)</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: CONTACT -->
+    <section id="contact" class="content-section">
+      <div class="section-tag-row">
+        <div class="section-pill-label">
+          <i class="ph-bold ph-envelope"></i>
+          <span>CONTACT</span>
+        </div>
+        <h2 class="section-title">Discutons de vos Projets</h2>
+        <p class="section-desc">À la recherche d'un stage ou d'une opportunité? Envoyez-moi un message direct.</p>
+      </div>
+
+      <div class="contact-shell-grid">
+
+        <!-- Direct Contact Info from CV -->
+        <div class="contact-info-column">
+          <a href="mailto:coodenow@gmail.com" class="contact-card-link">
+            <div class="contact-icon-bubble"><i class="ph-bold ph-envelope-simple"></i></div>
+            <div>
+              <div style="font-size: 0.75rem; text-transform: uppercase; color: var(--text-dim); font-weight: 700;">
+                Email Direct</div>
+              <div style="font-size: 0.95rem; font-weight: 600; color: var(--text-main);">coodenow@gmail.com</div>
+            </div>
+          </a>
+
+          <a href="tel:+212631368295" class="contact-card-link">
+            <div class="contact-icon-bubble"><i class="ph-bold ph-phone-call"></i></div>
+            <div>
+              <div style="font-size: 0.75rem; text-transform: uppercase; color: var(--text-dim); font-weight: 700;">
+                Téléphone / WhatsApp</div>
+              <div style="font-size: 0.95rem; font-weight: 600; color: var(--text-main);">+212 6 31 36 82 95</div>
+            </div>
+          </a>
+
+          <div class="contact-card-link">
+            <div class="contact-icon-bubble"><i class="ph-bold ph-map-pin"></i></div>
+            <div>
+              <div style="font-size: 0.75rem; text-transform: uppercase; color: var(--text-dim); font-weight: 700;">
+                Localisation</div>
+              <div style="font-size: 0.95rem; font-weight: 600; color: var(--text-main);">Meknès, Maroc</div>
+            </div>
+          </div>
+
+          <!-- Direct Download CV Button in Contact -->
+          <a href="assets/CV_Sahli_Reda.pdf" download="CV_Sahli_Reda.pdf" class="btn-pill-download"
+            style="margin-top: 10px; justify-content: center;">
+            <i class="ph-bold ph-download-simple"></i>
+            <span>Télécharger Mon CV (PDF)</span>
+          </a>
+        </div>
+
+        <!-- Contact Form -->
+        <form class="contact-form-side" id="contactForm">
+          <input type="hidden" name="access_key" value="f982af88-c897-47cf-b15e-fd66a61dd36b">
+          <input type="hidden" name="from_name" value="Portfolio Sahli Reda - Visiteur">
+
+          <div class="form-split-row">
+            <div>
+              <input type="text" name="Name" class="input-field" placeholder="Votre Nom *" required>
+            </div>
+            <div>
+              <input type="text" name="Company" class="input-field" placeholder="Entreprise / Organisation">
+            </div>
+          </div>
+
+          <div class="form-split-row">
+            <div>
+              <input type="email" name="E-mail" class="input-field" placeholder="Adresse Email *" required>
+            </div>
+            <div>
+              <input type="tel" name="Phone" class="input-field" placeholder="Numéro de Téléphone">
+            </div>
+          </div>
+
+          <div>
+            <textarea name="Message" class="textarea-field" placeholder="Votre Message *" required></textarea>
+          </div>
+
+          <div id="formFeedback" class="form-alert-msg"></div>
+
+          <button type="submit" id="submitBtn" class="btn-pill-download"
+            style="border-radius: var(--radius-md); justify-content: center;">
+            <span>Envoyer le Message</span>
+            <i class="ph-bold ph-paper-plane-tilt"></i>
+          </button>
+        </form>
+
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <p>&copy; 2026 Sahli Reda. Tous droits réservés.</p>
+    </footer>
+
+  </div>
+
+  <!-- PROJECT DETAILS MODAL -->
+  <div id="projectModal" class="modal-overlay" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <button id="modalCloseBtn" class="modal-close-btn" aria-label="Fermer la boîte">
+        <i class="ph-bold ph-x"></i>
+      </button>
+      <div id="modalDetails">
+        <!-- Injected dynamically via JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
