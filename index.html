@@ -1,1136 +1,806 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en" data-theme="dark">
 
-  <head>
-    <meta charset="UTF-8">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <!-- Page Title -->
-    <title> Software Engineer Developer || Sahli Reda  || UI/UX designer</title>
+  <!-- SEO Title & Meta -->
+  <title>Sahli Reda || Développeur Full-Stack &amp; UI/UX Designer</title>
+  <meta name="description"
+    content="Portfolio de Sahli Reda - Développeur Full-Stack | Développement Web & Mobile (Java / Android) | UI/UX Designer. Rigoureux et passionné par les systèmes web et mobiles évolutifs.">
+  <meta name="keywords"
+    content="Sahli Reda, Développeur Full-Stack, Web & Mobile, Java, Android, React 19, Next.js, Node.js, PostgreSQL, UI/UX Designer, Meknès, Maroc">
+  <meta name="author" content="Sahli Reda">
 
-    <!-- Meta Tags -->
-    <meta name="description" content="Show yourself brightly with Braxton - unique and creative portfolio and resume template!">
-    <meta name="keywords" content="mix_design, resume, portfolio, personal page, cv, template, one page, responsive, html5, css3, creative, clean">
-    <meta name="author" content="mix_design">
+  <!-- OpenGraph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Sahli Reda || Développeur Full-Stack &amp; UI/UX Designer">
+  <meta property="og:description"
+    content="Développement Web & Mobile (Java / Android) • Conception d'applications logistiques et intelligentes.">
+  <meta property="og:image" content="assets/images/sahlireda.jpeg">
 
-    <!-- Viewport Meta-->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <!-- Template Favicon & Icons Start -->
-    <link rel="icon" href="img/backgrounds/iconn.png" sizes="any">
-    <link rel="icon" href="img/backgrounds/iconn.png" type="image/png">
-    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
-    <link rel="manifest" href="img/favicon/manifest.webmanifest">
-    <!-- Template Favicon & Icons End -->
 
-    <!-- Facebook Metadata Start -->
-    <meta property="og:image:height" content="1200">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:title" content="Braxton - Personal Portfolio & Resume HTML Template">
-    <meta property="og:description" content="Show yourself brightly with Braxton - unique and creative portfolio and resume template!">
-    <meta property="og:url" content="https://mixdesign.club/themeforest/braxton">
-    <meta property="og:image" content="https://mixdesign.club/themeforest/braxton/img/favicon/og-image.jpg">
-    <!-- Facebook Metadata End -->
+  <!-- Google Fonts & Phosphor Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
 
-    <!-- Template Styles Start -->
-    <link rel="stylesheet" href="css/loaders/loader.css">
-    <link rel="stylesheet" type="text/css" href="css/plugins.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <!-- Template Styles End -->
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
 
-    <!-- Custom Browser Color Start -->
-    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#dcdce7">
-    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#111111">
-    <meta name="msapplication-navbutton-color" content="#111111">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <!-- Custom Browser Color End -->
-  </head>
+<body>
 
-  <body>
+  <!-- Ambient Lighting Effects -->
+  <div class="ambient-lighting">
+    <div class="glow-ambient-left"></div>
+    <div class="glow-ambient-right"></div>
+    <div class="glow-ambient-bottom"></div>
+  </div>
 
-    <!-- Loader Start -->
-    <div id="loader" class="loader">
-      <div id="loaderContent" class="loader__content">
-        <div class="loader__shadow"></div>
-        <div class="loader__box"></div>
+  <!-- FLOATING TOP ICON DOCK (EXACT AS SCREENSHOT) -->
+  <nav class="floating-dock-nav" id="dockNav">
+    <a href="#home" class="dock-item-link active" data-tooltip="Accueil" aria-label="Accueil">
+      <i class="ph-bold ph-house-simple"></i>
+    </a>
+    <a href="#projects" class="dock-item-link" data-tooltip="Projets" aria-label="Projets">
+      <i class="ph-bold ph-compass"></i>
+    </a>
+    <a href="#skills" class="dock-item-link" data-tooltip="Compétences" aria-label="Compétences">
+      <i class="ph-bold ph-code"></i>
+    </a>
+    <a href="#experience" class="dock-item-link" data-tooltip="Expérience" aria-label="Expérience">
+      <i class="ph-bold ph-briefcase"></i>
+    </a>
+    <a href="#education" class="dock-item-link" data-tooltip="Éducation" aria-label="Éducation">
+      <i class="ph-bold ph-graduation-cap"></i>
+    </a>
+    <a href="#certifications" class="dock-item-link" data-tooltip="Certifications" aria-label="Certifications">
+      <i class="ph-bold ph-certificate"></i>
+    </a>
+    <a href="#contact" class="dock-item-link" data-tooltip="Contact" aria-label="Contact">
+      <i class="ph-bold ph-envelope"></i>
+    </a>
+
+    <div class="dock-divider"></div>
+
+    <!-- Theme Switcher -->
+    <button id="themeToggle" class="dock-action-btn" data-tooltip="Thème" aria-label="Changer le thème">
+      <i class="ph-bold ph-sun"></i>
+    </button>
+
+    <!-- GitHub -->
+    <a href="https://github.com/Reda-sahli" target="_blank" rel="noopener noreferrer" class="dock-item-link"
+      data-tooltip="GitHub" aria-label="GitHub">
+      <i class="ph-bold ph-github-logo"></i>
+    </a>
+  </nav>
+
+  <!-- =========================================================================
+       HERO FRONT SCREEN (EXACT INSPIRATION LAYOUT)
+       ========================================================================= -->
+  <section id="home" class="hero-front-wrapper">
+    <div class="hero-front-content">
+
+      <!-- Status Pill Badge -->
+      <div class="status-pill-badge">
+        <div class="status-dot-cyan"></div>
+        <span>À la recherche d'un stage estival &amp; opportunités Web/Mobile</span>
       </div>
-    </div>
-    <!-- Loader End -->
 
-    <!-- Header Start -->
-    <header id="header" class="header d-flex justify-content-between">
+      <!-- Huge Dual-Gradient Headline -->
+      <h1 class="hero-main-title">
+        <span class="name-part-1">Sahli</span>
+        <span class="name-part-2">Reda</span>
+      </h1>
 
-      <!-- Navigation Menu Start -->
-      <div class="header__navigation">
-        <nav id="menu" class="menu">
-          <ul class="menu__list d-flex justify-content-start">
-            <li class="menu__item">
-              <a class="menu__link btn" href="#home">
-                <span class="menu__caption">Home</span>
-                <i class="ph-bold ph-house-simple"></i>
-              </a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link btn" href="#portfolio">
-                <span class="menu__caption">Portfolio</span>
-                <i class="ph-bold ph-squares-four"></i>
-              </a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link btn" href="#about">
-                <span class="menu__caption">About Me</span>
-                <i class="ph-bold ph-user"></i>
-              </a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link btn" href="#resume">
-                <span class="menu__caption">Resume</span>
-                <i class="ph-bold ph-article"></i>
-              </a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link btn" href="#contact">
-                <span class="menu__caption">Contact</span>
-                <i class="ph-bold ph-envelope"></i>
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <!-- Navigation Menu End -->
+      <!-- Role / Bio Subtitles from CV -->
+      <p class="hero-role-headline">
+        Développeur Full-Stack | Développement Web &amp; Mobile (Java / Android)
+      </p>
+      <p class="hero-sub-detail">
+        Jeune diplômé en Génie Informatique • Expérience Full-Stack (React 19, Node.js, Express, PostgreSQL) &amp;
+        Mobile (Java, Android, Kotlin) • UI/UX Designer.
+      </p>
 
-      <!-- Header Controls Start -->
-      <div class="header__controls d-flex justify-content-end">
-        <button id="color-switcher" class="color-switcher header__switcher btn" type="button" role="switch" aria-label="light/dark mode" aria-checked="true"></button>
-        <a id="notify-trigger" class="header__trigger btn" href="mailto:coodenow@gmail.com?subject=Message%20from%20your%20site">
-          <span class="trigger__caption">Let's Talk</span>
-          <i class="ph-bold ph-chat-dots"></i>
+      <!-- Centered CTA Buttons (Download CV + Contact) -->
+      <div class="hero-btn-row">
+        <!-- Prominent Glowing Download CV Button linking to real PDF -->
+        <a href="assets/CV_Sahli_Reda.pdf" download="CV_Sahli_Reda.pdf" class="btn-pill-download"
+          title="Télécharger le CV de Sahli Reda (PDF)">
+          <i class="ph-bold ph-download-simple"></i>
+          <span>Download CV</span>
+        </a>
+
+        <!-- Contact Button -->
+        <a href="#contact" class="btn-pill-contact">
+          <i class="ph-bold ph-envelope-simple"></i>
+          <span>Me Contacter</span>
+          <i class="ph-bold ph-arrow-up-right" style="font-size: 0.9rem;"></i>
         </a>
       </div>
-      <!-- Header Controls End -->
 
-    </header>
-    <!-- Header End -->
+      <!-- Minimalist Social Icons Row -->
+      <div class="hero-social-links">
+        <a href="https://github.com/Reda-sahli" target="_blank" rel="noopener noreferrer" class="hero-social-item"
+          title="GitHub">
+          <i class="ph-bold ph-github-logo"></i>
+        </a>
+        <a href="mailto:coodenow@gmail.com" class="hero-social-item" title="Email: coodenow@gmail.com">
+          <i class="ph-bold ph-envelope"></i>
+        </a>
+        <a href="tel:+212631368295" class="hero-social-item" title="Téléphone: +212 6 31 36 82 95">
+          <i class="ph-bold ph-phone-call"></i>
+        </a>
+        <a href="https://www.instagram.com/sahli_reda_/" target="_blank" rel="noopener noreferrer"
+          class="hero-social-item" title="Instagram">
+          <i class="ph-bold ph-instagram-logo"></i>
+        </a>
+      </div>
 
-    <!-- SVG Background Start -->
-    <div id="svgBackground" class="svg-background">
-      <!-- top svg item -->
-      <div class="background__svg01" data-speed="0.8">
-        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-          width="1000px" height="1000px" viewBox="0 0 1000 1000" style="enable-background:new 0 0 1000 1000;" xml:space="preserve">
-          <style type="text/css">
-            .bg01{fill:url(#color-gradient);}
-          </style>
-          <radialGradient id="color-gradient" cx="418.5665" cy="225.9685" r="499.9326" fx="866.8251" fy="4.6162" gradientTransform="matrix(-0.6935 0.7207 -0.7207 -0.6935 953.1126 355.0528)" gradientUnits="userSpaceOnUse">
-            <stop  offset="0" style="stop-color:#CEC4EF"/>
-            <stop  offset="1" style="stop-color:#CEC4EF;stop-opacity:0"/>
-          </radialGradient>
-          <circle class="bg01" cx="500" cy="500" r="500"/>
-        </svg>
-      </div>
-      <!-- bottom svg item -->
-      <div class="background__svg02" data-speed="0.4">
-        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="429.6px" height="429.6px"
-          viewBox="0 0 429.6 429.6" style="enable-background:new 0 0 429.6 429.6;" xml:space="preserve">
-        <style type="text/css">
-          .bg02{fill:url(#color-gradient-2);}
-        </style>
-        <g id="Layer_1-2">
-          <radialGradient id="color-gradient-2" cx="2213.9312" cy="-11537.4219" r="214.85" fx="2393.6191" fy="-11419.6494" gradientTransform="matrix(1.902285e-02 0.9998 0.9998 -1.954636e-02 11706.5303 -2223.4016)" gradientUnits="userSpaceOnUse">
-            <stop  offset="0" style="stop-color:#CEC4EF"/>
-            <stop  offset="1" style="stop-color:#CEC4EF;stop-opacity:0"/>
-          </radialGradient>
-          <path class="bg02" d="M63,63C146.9-21,282.9-21,366.8,62.9s83.8,219.9-0.1,303.8s-219.9,83.9-303.8,0.1S-20.9,146.9,63,63z"/>
-        </g>
-        </svg>
-      </div>
     </div>
-    <!-- SVG Background End -->
+  </section>
 
-    <!-- Avatar Side Block Start -->
-    <div id="avatar" class="avatar">
-      <div class="avatar__container d-flex flex-column justify-content-lg-between">
-        <!-- image and logo -->
-        <div class="avatar__block">
-          <div class="avatar__logo d-flex align-items-center">
-            <div class="logo__image">
-              <!-- Your Logo Here!!! -->
-              <img src="img/backgrounds/iconn.png" alt="Braxton - Personal Portfolio & Resume HTML Template Logo">
+  <!-- =========================================================================
+       EXPANDED MAIN CONTENT AREA
+       ========================================================================= -->
+  <div class="main-container">
 
-              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                width="85px" height="85px" viewBox="0 0 85 85" 
-                style="enable-background:new 0 0 85 85;" xml:space="preserve" class="gradient-fill">
-                <style type="text/css">
-                  .gradient-fill {
-                    fill: url(#gradientFill);
-                  }
-          
-                </style>
-            
-              </svg>
-            </div>
-            <div class="logo__caption">
-              <p>Sahli<br>Reda</p>
-            </div>
-          </div>
-          <div class="avatar__image">
-            <img src="img/backgrounds/new_mee.png" alt="Braxton - Personal Portfolio & Resume HTML Template Avatar">
-          </div>
+    <!-- SECTION: FEATURED PROJECTS & ENGAGEMENTS -->
+    <section id="projects" class="content-section">
+      <div class="section-tag-row">
+        <div class="section-pill-label">
+          <i class="ph-bold ph-briefcase"></i>
+          <span>PROJETS &amp; ENGAGEMENTS</span>
         </div>
-        <!-- data caption #1 -->
-        <div class="avatar__block">
-          <h6>
-            <small class="top">Specialization:</small>
-            Software Engineer<br> UI/UX designer
-          </h6>
-        </div>
-        <!-- data caption #2 -->
-        <div class="avatar__block">
-          <h6>
-            <small class="top">Based in:</small>
-            Morocco , Meknes
-          </h6>
-        </div>
-        <!-- socials and CTA button -->
-        <div class="avatar__block">
-          <div class="avatar__socials">
-            <ul class="socials-square d-flex justify-content-between">
-              <li class="socials-square__item">
-                <a class="socials-square__link btn" href="https://www.linkedin.com/in/reda-sahli-b93807268/" target="_blank"> <i class="ph ph-linkedin-logo"></i></a>
-              </li>
-              <li class="socials-square__item">
-                <a class="socials-square__link btn" href="https://github.com/Reda-sahli" target="_blank"><i class="ph ph-github-logo"></i></a>
-              </li>
-              <li class="socials-square__item">
-                <a class="socials-square__link btn" href="https://www.instagram.com/sahli_reda_/" target="_blank"><i class="ph-bold ph-instagram-logo"></i></a>
-              </li>
-            
-            </ul>
-          </div>
-          <div class="avatar__btnholder">
-            <a class="btn btn-default btn-fullwidth btn-hover btn-hover-accent" href="#contact" target="_blank">
-              <span class="btn-caption">Let's Work Together!</span>
-            </a>
-          </div>
-        </div>
+        <h2 class="section-title">Projets Réalisés &amp; Associatifs</h2>
+        <p class="section-desc">Conception d'applications web/mobiles métier, plateformes associatives et solutions
+          technologiques.</p>
       </div>
-    </div>
-    <!-- Avatar Side Block End -->
 
-    <!-- Page Content Start -->
-    <div id="content" class="content">
-      <div class="content__wrapper">
+      <!-- Filter Chips -->
+      <div class="project-filter-row">
+        <button class="filter-chip active" data-filter="all">Tous les Projets</button>
+        <button class="filter-chip" data-filter="fullstack">Applications Web &amp; ERP</button>
+        <button class="filter-chip" data-filter="associatif">Associatif &amp; Concours</button>
+        <button class="filter-chip" data-filter="design">Design &amp; 3D</button>
+      </div>
 
-        <!-- Intro Section Start -->
-        <section id="home" class="main intro">
+      <!-- Projects Grid -->
+      <div class="projects-masonry-grid">
 
-          <!-- Headline Start -->
-          <div id="headline" class="headline d-flex align-items-start flex-column">
-            <p class="headline__subtitle animate-headline">
-              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="13px" height="13px" viewBox="0 0 13 13" fill="currentColor">
-                <path fill="currentColor" d="M5.6,12.6c-0.5-0.8-0.7-2.4-1.7-3.5c-1-1-2.7-1.2-3.5-1.7C-0.1,7-0.1,6,0.4,5.6c0.8-0.5,2.3-0.6,3.5-1.8
-                  C5,2.8,5.1,1.2,5.6,0.4C6-0.1,7-0.1,7.4,0.4c0.5,0.8,0.7,2.4,1.8,3.5c1.2,1.2,2.6,1.2,3.5,1.7c0.6,0.4,0.6,1.4,0,1.7
-                  C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z"/>
-              </svg>
-              <span>Let's meet!</span>
-            </p>
-            <h1 class="headline__title animate-headline">I'm Sahli Reda<br>Software Engineer and UI/UX designer</h1>
-            <div class="headline__btnholder d-flex flex-column flex-sm-row">
-              <a class="btn mobile-vertical btn-default btn-hover btn-hover-accent-mobile animate-headline" href="#portfolio">
-                <span class="btn-caption">My Works</span>
-                <i class="ph-bold ph-squares-four"></i>
+        <!-- PROJECT 1: EXCEL CLEARANCE EXPRESS (PFE) WITH DIRECT LINK https://excelclearance.com/ -->
+        <article class="project-bento-card wide" data-category="fullstack">
+          <div class="project-image-box">
+            <img src="assets/images/excel-clearance.svg" alt="Excel Clearance Express">
+            <div class="project-quick-overlay">
+              <a href="https://excelclearance.com/" target="_blank" rel="noopener noreferrer" class="btn-pill-download"
+                style="padding: 8px 18px; font-size: 0.85rem; margin-right: 8px;">
+                <i class="ph-bold ph-arrow-square-out"></i> Visiter le Site
               </a>
-             <!--- <a class="btn mobile-vertical btn-default btn-hover btn-hover-outline-mobile animate-headline" href="#0">
-                <span class="btn-caption">Download CV</span>
-                <i class="ph-bold ph-download-simple"></i>
-              </a>---->
+              <button class="btn-pill-contact" style="padding: 8px 18px; font-size: 0.85rem;"
+                data-project-trigger="excel-clearance">
+                <i class="ph-bold ph-eye"></i> Détails
+              </button>
             </div>
           </div>
-          <!-- Headline End -->
-
-          <!-- Scroll Button Start -->
-          <div class="rotating-btn">
-            <a href="#portfolio" class="rotating-btn__link slide-down">
-              <!-- SVG rotating text -->
-              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                viewBox="0 0 120 120" style="enable-background:new 0 0 120 120;" xml:space="preserve" 
-                class="animate-rotation" data-value="360">
-                <defs>
-                  <path id="textPath" d="M110,59.5c0,27.6-22.4,50-50,50s-50-22.4-50-50s22.4-50,50-50S110,31.9,110,59.5z"/>
-                </defs>
-                <g>
-                  <use xlink:href="#textPath" fill="none"></use>
-                  <text>
-                    <!-- button text here!!! -->
-                    <textPath xlink:href="#textPath">Scroll for More * Scroll for More * </textPath>
-                  </text>
-                </g>
-              </svg>
-              <!-- arrow icon -->
-              <i class="ph-bold ph-arrow-down"></i>
-            </a>
-          </div>
-          <!-- Scroll Button End -->
-
-        </section>
-        <!-- Intro Section End -->
-
-        <!-- Portfolio Section Start -->
-        <section id="portfolio" class="inner inner-first portfolio">
-
-          <!-- Content Block - H2 Section Title Start -->
-          <div class="content__block section-grid-title">
-            <p class="h2__subtitle animate-in-up">
-              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="13px" height="13px" viewBox="0 0 13 13" fill="currentColor">
-                <path fill="currentColor" d="M5.6,12.6c-0.5-0.8-0.7-2.4-1.7-3.5c-1-1-2.7-1.2-3.5-1.7C-0.1,7-0.1,6,0.4,5.6c0.8-0.5,2.3-0.6,3.5-1.8
-                  C5,2.8,5.1,1.2,5.6,0.4C6-0.1,7-0.1,7.4,0.4c0.5,0.8,0.7,2.4,1.8,3.5c1.2,1.2,2.6,1.2,3.5,1.7c0.6,0.4,0.6,1.4,0,1.7
-                  C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z"/>
-              </svg>
-              <span>Portfolio</span>
+          <div class="project-info-box">
+            <div class="project-pill-tags">
+              <span class="pill-tag">React 19 + TailwindCSS</span>
+              <span class="pill-tag purple">Node.js / Express.js</span>
+              <span class="pill-tag pink">PostgreSQL (40 API Endpoints)</span>
+            </div>
+            <h3 class="project-card-heading">
+              <a href="https://excelclearance.com/" target="_blank" rel="noopener noreferrer"
+                style="display: inline-flex; align-items: center; gap: 8px;">
+                Excel Clearance Express — Stage PFE
+                <i class="ph-bold ph-arrow-up-right" style="font-size: 1.1rem; color: #38bdf8;"></i>
+              </a>
+            </h3>
+            <p class="project-card-summary">
+              Conception et développement de bout en bout d’une application web de gestion logistique et de facturation
+              douanière à Casablanca. Implémentation d'une API REST (40 endpoints), sécurité JWT/Bcrypt avec contrôle
+              d'accès selon le rôle (RBAC), calcul des taxes en temps réel et dashboard statistique.
             </p>
-            <h2 class="h2__title animate-in-up">Check out my featured projects</h2>
-          </div>
-          <!-- Content Block - H2 Section Title End -->
-
-          <!-- Content Block - Works Gallery Start -->
-          <div class="content__block grid-block">
-            <div class="container-fluid px-0 inner__gallery">
-              <div class="row gx-0 my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
-    
-                <!-- Works Gallery Single Item Start -->
-                <figure class="col-12 col-md-6 gallery__item grid-item animate-card-2" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                  <a href="img/works/1.svg" data-image="img/works/1.svg" class="gallery__link" itemprop="conte
-                  ntUrl" data-size="1400x1400">
-                    <img src="img/works/1.svg" class="gallery__image" itemprop="thumbnail" alt="Image description">
-                  </a>
-             
-                  <figcaption class="gallery__descr" itemprop="caption description">
-                    <h5>UMI - MUN</h5>
-                    <div class="card__tags d-flex flex-wrap">
-                      <span class="rounded-tag opposite">Illustrations</span>
-                      <span class="rounded-tag opposite">3D Render</span>
-                    </div>
-                    <p class="small">Designed the official logo for the MUN (Model United Nations) club at Université Moulay Ismaïl (UMI), 
-                      blending modern design with symbolic elements to reflect diplomacy, unity, and global engagement.
-                    </p>
-                  </figcaption>
-                </figure>
-                <!-- Works Gallery Single Item End -->
-    
-                <!-- Works Gallery Single Item Start -->
-                <figure class="col-12 col-md-6 gallery__item grid-item animate-card-2" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                  <a href="img/works/2.svg" data-image="img/works/2.svg" class="gallery__link" itemprop="contentUrl" data-size="1400x1400">
-                    <img src="img/works/2.svg" class="gallery__image" itemprop="thumbnail" alt="Image description">
-                  </a>
-                  <figcaption class="gallery__descr opposite" itemprop="caption description">
-                    <h5 class="opposite">MEDCHAIN</h5>
-                    <div class="card__tags d-flex flex-wrap">
-                      <span class="rounded-tag">UI Design</span>
-                      <span class="rounded-tag">Illustrations</span>
-              
-
-                      
-                    </div>
-                    <p class="small">Crafted a modern and professional logo for MedChain, a company focused on healthcare and blockchain solutions.
-                       The design reflects trust, technology, and connectivity—key values at the heart of the brand.
-                    </p>
-                  </figcaption>
-                </figure>
-                <!-- Works Gallery Single Item End -->
-    
-                <!-- Works Gallery Single Item Start -->
-                <figure class="col-12 col-md-6 gallery__item grid-item animate-card-2" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                  <a href="img/works/3.svg" data-image="img/works/3.svg" class="gallery__link" itemprop="contentUrl" data-size="1400x1400">
-                    <img src="img/works/3.svg" class="gallery__image" itemprop="thumbnail" alt="Image description">
-                  </a>
-                  <figcaption class="gallery__descr opposite" itemprop="caption description">
-                    <h5 class="opposite">Notification Icon</h5>
-                    <div class="card__tags d-flex flex-wrap">
-                      <span class="rounded-tag">Illustrations</span>
-                      <span class="rounded-tag">3D Render</span>
-                    </div>
-                    <p class="small">Logo for IVR Club’s formation program, representing growth, knowledge, and innovation in student 
-                      training, workshops, and educational activities.
-                    </p>
-                  </figcaption>
-                </figure>
-                <!-- Works Gallery Single Item End -->
-    
-                <!-- Works Gallery Single Item Start -->
-                <figure class="col-12 col-md-6 gallery__item grid-item animate-card-2" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                  <a href="img/works/recanav.svg" data-image="img/works/recanav.svg" class="gallery__link" itemprop="contentUrl" data-size="1400x1400">
-                    <img src="img/works/recanav.svg" class="gallery__image" itemprop="thumbnail" alt="Image description">
-                  </a>
-                  <figcaption class="gallery__descr " itemprop="caption description">
-                    <h5>ReCaravan</h5>
-                    <div class="card__tags d-flex flex-wrap">
-                      <span class="rounded-tag opposite">Illustrations</span>
-                      <span class="rounded-tag opposite">3D</span>
-                    </div>
-                    <p class="small">ReCaravan logo design reflects sustainable travel, blending nature-friendly elements 
-                      with smooth, modern typography to convey movement, comfort, and eco-living.
-                    </p>
-                  </figcaption>
-                </figure>
-                <!-- Works Gallery Single Item End -->
-    
-              </div>
+            <div class="project-card-actions">
+              <a href="https://excelclearance.com/" target="_blank" rel="noopener noreferrer" class="project-view-link">
+                <span>https://excelclearance.com/</span>
+                <i class="ph-bold ph-arrow-square-out"></i>
+              </a>
+              <button class="project-view-link" data-project-trigger="excel-clearance"
+                style="color: var(--text-muted);">
+                <span>Voir la Fiche</span>
+                <i class="ph-bold ph-arrow-right"></i>
+              </button>
             </div>
           </div>
-          <!-- Content Block - Works Gallery End -->
+        </article>
 
-        </section>
-        <!-- Portfolio Section End -->
-
-        <!-- About Section Start -->
-        <section id="about" class="inner about">
-
-          <!-- Content Block - H2 Section Title Start -->
-          <div class="content__block section-grid-title">
-            <p class="h2__subtitle animate-in-up">
-              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="13px" height="13px" viewBox="0 0 13 13" fill="currentColor">
-                <path fill="currentColor" d="M5.6,12.6c-0.5-0.8-0.7-2.4-1.7-3.5c-1-1-2.7-1.2-3.5-1.7C-0.1,7-0.1,6,0.4,5.6c0.8-0.5,2.3-0.6,3.5-1.8
-                  C5,2.8,5.1,1.2,5.6,0.4C6-0.1,7-0.1,7.4,0.4c0.5,0.8,0.7,2.4,1.8,3.5c1.2,1.2,2.6,1.2,3.5,1.7c0.6,0.4,0.6,1.4,0,1.7
-                  C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z"/>
-              </svg>
-              <span>About Me</span>
+        <!-- PROJECT 2: MEDCHAINS (AL AKHAWAYN UNIVERSITY) -->
+        <article class="project-bento-card" data-category="associatif">
+          <div class="project-image-box">
+            <img src="assets/images/medchain.svg" alt="MedChains Santé-Tech">
+            <div class="project-quick-overlay">
+              <button class="btn-pill-download" style="padding: 8px 18px; font-size: 0.85rem;"
+                data-project-trigger="medchain">
+                <i class="ph-bold ph-eye"></i> Aperçu Détaillé
+              </button>
+            </div>
+          </div>
+          <div class="project-info-box">
+            <div class="project-pill-tags">
+              <span class="pill-tag pink">Santé-Tech</span>
+              <span class="pill-tag purple">TBH Program • AUI</span>
+              <span class="pill-tag">Compétition 2025</span>
+            </div>
+            <h3 class="project-card-heading">Projet MedChains (Santé-Tech)</h3>
+            <p class="project-card-summary">
+              Collaboration intensive sur un projet entrepreneurial technologique à fort impact appliqué au secteur
+              médical. Représentation du Centre TBH lors de la compétition à Al Akhawayn University (Ifrane).
             </p>
-            <h2 class="h2__title animate-in-up">Turning complex problems into simple  website</h2>
-          </div>
-          <!-- Content Block - H2 Section Title End -->
-
-          <!-- Content Block - Achievements Start -->
-          <div class="content__block grid-block">
-            <div class="achievements d-flex flex-column flex-md-row align-items-md-stretch">
-              <!-- achievements single item -->
-              <div class="achievements__item d-flex flex-column grid-item animate-card-3">
-                <div class="achievements__card">
-                  <p class="achievements__number">12+</p>
-                  <p class="achievements__descr">Happy clients</p>
-                </div>
-              </div>
-              <!-- achievements single item -->
-              <div class="achievements__item d-flex flex-column grid-item animate-card-3">
-                <div class="achievements__card">
-                  <p class="achievements__number">2+</p>
-                  <p class="achievements__descr">Years of experience</p>
-                </div>
-              </div>
-              <!-- achievements single item -->
-              <div class="achievements__item d-flex flex-column grid-item animate-card-3">
-                <div class="achievements__card">
-                  <p class="achievements__number">15+</p>
-                  <p class="achievements__descr">Projects done</p>
-                </div>
-              </div>
+            <div class="project-card-actions">
+              <button class="project-view-link" data-project-trigger="medchain">
+                <span>Détails</span>
+                <i class="ph-bold ph-arrow-right"></i>
+              </button>
             </div>
           </div>
-          <!-- Content Block - Achievements End -->
+        </article>
 
-          <!-- Content Block - About Me Data Start -->
-          <div class="content__block grid-block block-large">
-            <div class="container-fluid p-0">
-              <div class="row g-0 justify-content-between">
-                
-                <!-- About Me Description Start -->
-                <div class="col-12 col-xl-8 grid-item about-descr">
-                  <p class="about-descr__text animate-in-up">
-                   I'm a Full-Stack Software Developer passionate about creating modern web applications that help businesses grow and operate more efficiently. I specialize in designing secure, scalable, and user-friendly solutions tailored to each project's needs.
-Whether it's a management system, business platform, or custom web application, I focus on delivering clean code, intuitive user experiences, and reliable software.
-
- 
-                  </p>
-                  <p class="about-descr__text animate-in-up">
-                   Let's build your solution together.
-                  </p>
-                  <!--------
-                  <div class="btn-group about-descr__btnholder animate-in-up">
-                    <a class="btn mobile-vertical btn-default btn-hover btn-hover-accent" href="#0">
-                      <span class="btn-caption">Download CV</span>
-                      <i class="ph-bold ph-download-simple"></i>
-                    </a>
-                  </div>------>
-                </div>
-                <!-- About Me Description End -->
-      
-                <!-- About Me Information Start -->
-                <div class="col-12 col-xl-4 grid-item about-info">
-                  <div class="about-info__item animate-in-up">
-                    <h6>
-                      <small class="top">Name</small>
-                      Sahli Reda
-                    </h6>
-                  </div>
-                  <div class="about-info__item animate-in-up">
-                    <h6>
-                      <small class="top">Phone</small>
-                      <a class="text-link-bold" href="tel:+212631368295">+212 631368295</a>
-                    </h6>
-                  </div>
-                  <div class="about-info__item animate-in-up">
-                    <h6>
-                      <small class="top">Email</small>
-                      <a class="text-link-bold" href="mailto:coodenow@gmail.com?subject=Message%20from%20your%20site">coodenow@gmail.com</a>
-                    </h6>
-                  </div>
-                  <div class="about-info__item animate-in-up">
-                    <h6>
-                      <small class="top">Location</small>
-                      <a class="text-link-bold" href="" target="_blank"> Morocco , Meknes</a>
-                    </h6>
-                  </div>
-                </div>
-                <!-- About Me Information End -->
-      
-              </div>
+        <!-- PROJECT 3: UMI - MUN -->
+        <article class="project-bento-card" data-category="associatif">
+          <div class="project-image-box">
+            <img src="assets/images/umi-mun.jpg" alt="UMI Model United Nations"
+              style="object-fit: cover; object-position: center top;">
+            <div class="project-quick-overlay">
+              <a href="https://github.com/Reda-sahli/umi-mun" target="_blank" rel="noopener noreferrer"
+                class="btn-pill-download" style="padding: 8px 18px; font-size: 0.85rem; margin-right: 8px;">
+                <i class="ph-bold ph-github-logo"></i> GitHub
+              </a>
+              <button class="btn-pill-contact" style="padding: 8px 18px; font-size: 0.85rem;"
+                data-project-trigger="umi-mun">
+                <i class="ph-bold ph-eye"></i> Détails
+              </button>
             </div>
           </div>
-          <!-- Content Block - About Me Data End -->
-
-          <!-- Content Block - Services Start -->
-          <div class="content__block grid-block">
-            <div class="container-fluid p-0">
-              <div class="row g-0 align-items-stretch cards">
-
-
-                 <!-- services grid cards single item -->
-                <div class="col-12 col-md-6 cards__item grid-item animate-card-2">
-                  <div class="cards__card d-flex flex-column">
-                    <div class="cards__descr">
-                      <h4 class="cards__title animate-in-up">Excel Clearance Express</h4>
-                      <div class="cards__tags d-flex flex-wrap animate-in-up">
-                        <span class="rounded-tag tag-outline">React 19 + Vite</span>
-                        <span class="rounded-tag tag-outline">Express.js</span>
-                        <span class="rounded-tag tag-outline">PostgreSQL</span>
-                      </div>
-                      <p class="small cards__text animate-in-up">Excel Clearance Express est une application web métier de gestion de facturation et logistique douanière.
-                      </p>
-                    </div>
-                    <div class="cards__image d-flex animate-in-up">
-                      <img src="img/works/EXCE_CLEARANCE_login.png" alt="Service/Feature Image">
-                    </div>
-                  </div>
-                </div>
-                           <!-- services grid cards single item -->
-                <div class="col-12 col-md-6 cards__item grid-item animate-card-2">
-                  <div class="cards__card d-flex flex-column">
-                    <div class="cards__descr">
-                      <h4 class="cards__title animate-in-up">UMI - MUN </h4>
-                      <div class="cards__tags d-flex flex-wrap animate-in-up">
-                        <span class="rounded-tag tag-outline">React & Next.js</span>
-                        <span class="rounded-tag tag-outline">Tailwind CSS</span>
-                        <span class="rounded-tag tag-outline">Type script</span>
-                      </div>
-                      <p class="small cards__text animate-in-up">Model United Nations in Moulay Ismail University.
-                      </p>
-                    </div>
-                    <div class="cards__image d-flex animate-in-up">
-                      <img src="img/backgrounds/UMI-MUN.png" alt="img/backgrounds/UMI-MUN.png">
-                    </div>
-                  </div>
-                </div>
-                <!-- services grid cards single item -->
-           
-                <div class="col-12 col-md-6 cards__item grid-item animate-card-2">
-                  <div class="cards__card d-flex flex-column">
-                    <div class="cards__descr">
-                      <h4 class="cards__title animate-in-up">Frontend development <br>Département
-                        d’Informatique</h4>
-                      <div class="cards__tags d-flex flex-wrap animate-in-up">
-                        <span class="rounded-tag tag-outline">UI/UX Design</span>
-                        <span class="rounded-tag tag-outline">HTML CSS</span>
-                        <span class="rounded-tag tag-outline">JS</span>
-                      </div>
-                      <p class="small cards__text animate-in-up">  ​Developed the official website for the 
-                        Faculté des Sciences de Meknès' Département d’Informatique.
-          </p>
-                    </div>
-                    <div class="cards__image d-flex animate-in-up">
-                      <img src="img/works/site 1.svg" alt="Service/Feature Image">
-                    </div>
-                  </div>
-                </div>
-               
-             
-    
-              </div>
+          <div class="project-info-box">
+            <div class="project-pill-tags">
+              <span class="pill-tag">Site Web Officiel</span>
+              <span class="pill-tag purple">Next.js &amp; React</span>
+              <span class="pill-tag">umi-mun.online</span>
             </div>
-          </div>
-          <!-- Content Block - Services End -->
-
-        </section>
-        <!-- About Section End -->
-
-        <!-- Resume Section Start -->
-        <section id="resume" class="inner resume">
-
-          <!-- Content Block - H2 Section Title Start -->
-          <div class="content__block block-large">
-            <p class="h2__subtitle animate-in-up">
-              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="13px" height="13px" viewBox="0 0 13 13" fill="currentColor">
-                <path fill="currentColor" d="M5.6,12.6c-0.5-0.8-0.7-2.4-1.7-3.5c-1-1-2.7-1.2-3.5-1.7C-0.1,7-0.1,6,0.4,5.6c0.8-0.5,2.3-0.6,3.5-1.8
-                  C5,2.8,5.1,1.2,5.6,0.4C6-0.1,7-0.1,7.4,0.4c0.5,0.8,0.7,2.4,1.8,3.5c1.2,1.2,2.6,1.2,3.5,1.7c0.6,0.4,0.6,1.4,0,1.7
-                  C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z"/>
-              </svg>
-              <span>Resume</span>
+            <h3 class="project-card-heading">
+              <a href="https://github.com/Reda-sahli/umi-mun" target="_blank" rel="noopener noreferrer"
+                style="display: inline-flex; align-items: center; gap: 8px;">
+                UMI MUN (Model United Nations)
+                <i class="ph-bold ph-arrow-up-right" style="font-size: 1.1rem; color: #38bdf8;"></i>
+              </a>
+            </h3>
+            <p class="project-card-summary">
+              Création du site web officiel du UMI MUN (umi-mun.online), réalisation de vidéos de formation multilingues
+              (français, anglais, arabe) et participation à la simulation diplomatique.
             </p>
-            <h2 class="h2__title animate-in-up">Education and practical experience</h2>
-            <p class="h2__text animate-in-up">
-              I hold a degree from Moulay Ismail University and specialize in software engineering.
-               Passionate about coding, I continuously learn, refine my skills, and explore new technologies.
-                Through hands-on experience, I build efficient applications, solve 
-                 <a href="#0" class="text-link">complex problems</a> 
-                 and stay updated with industry trends to create innovative and impactful solutions.
+            <div class="project-card-actions">
+              <a href="https://github.com/Reda-sahli/umi-mun" target="_blank" rel="noopener noreferrer"
+                class="project-view-link">
+                <i class="ph-bold ph-github-logo"></i>
+                <span>Code Source</span>
+              </a>
+              <button class="project-view-link" data-project-trigger="umi-mun" style="color: var(--text-muted);">
+                <span>Voir la Fiche</span>
+                <i class="ph-bold ph-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 4: CLUB IVR & FHEMTECH 3D -->
+        <article class="project-bento-card" data-category="design">
+          <div class="project-image-box">
+            <img src="assets/images/ivr-club.svg" alt="Club IVR Université Moulay Ismaïl">
+            <div class="project-quick-overlay">
+              <button class="btn-pill-download" style="padding: 8px 18px; font-size: 0.85rem;"
+                data-project-trigger="ivr-club">
+                <i class="ph-bold ph-eye"></i> Aperçu Détaillé
+              </button>
+            </div>
+          </div>
+          <div class="project-info-box">
+            <div class="project-pill-tags">
+              <span class="pill-tag purple">Animation 3D</span>
+              <span class="pill-tag">Logo FHEMTECH</span>
+              <span class="pill-tag pink">Club IVR</span>
+            </div>
+            <h3 class="project-card-heading">Club IVR — Designer &amp; Organisateur</h3>
+            <p class="project-card-summary">
+              Co-création d'événements Tech et d'ateliers de code, conception de la charte graphique et du logo officiel
+              FHEMTECH (robotique, IA, web) et réalisation d’une vidéo animée en 3D.
             </p>
-          </div>
-          <!-- Content Block - H2 Section Title End -->
-
-          <!-- Content Block - Education Start -->
-          <div class="content__block block-large">
-
-            <!-- H3 Block Start -->
-            <div class="section-h3">
-              <h3 class="h3__title animate-in-up">My education</h3>
-            </div>
-            <!-- H3 Block End -->
-
-            <!-- Education Lines Start -->
-            <div class="container-fluid p-0 resume-lines">
-              <!-- education single item -->
-              <div class="row g-0 resume-lines__item animate-in-up">
-                <div class="col-12 col-md-2">
-                  <span class="resume-lines__date animate-in-up">2025 - 2026</span>
-                </div>
-                <div class="col-12 col-md-5">
-                  <h5 class="resume-lines__title animate-in-up">Bachelor's degree .</h5>
-                  <p class="resume-lines__source animate-in-up">By : 
-                    <a href="#0" class="text-link-bold" target="_blank">UMI</a>
-                  </p>
-                </div>
-                <div class="col-12 col-md-5">
-                  <p class="small resume-lines__descr animate-in-up">I hold a Bachelor's Degree in Computer Engineering from UMI ,
-                     where I developed strong skills in programming, software development, and problem-solving.</p>
-                </div>
-              </div>
-             
-                  <!-- education single item -->
-                  <div class="row g-0 resume-lines__item animate-in-up">
-                    <div class="col-12 col-md-2">
-                      <span class="resume-lines__date animate-in-up">2022 - 2025</span>
-                    </div>
-                    <div class="col-12 col-md-5">
-                      <h5 class="resume-lines__title animate-in-up">Computer Engineering Degree .</h5>
-                      <p class="resume-lines__source animate-in-up"> By
-                        <a href="#0" class="text-link-bold" target="_blank">UMI</a>
-                      </p>
-                    </div>
-                    <div class="col-12 col-md-5">
-                      <p class="small resume-lines__descr animate-in-up">I hold a Computer Engineering Degree from UMI, 
-                        where I gained expertise in programming , algorithms, and software development.</p>
-                    </div>
-                  </div>
-               <!-- education single item -->
-              <div class="row g-0 resume-lines__item animate-in-up">
-                <div class="col-12 col-md-2">
-                  <span class="resume-lines__date animate-in-up">2021 - 2022</span>
-                </div>
-                <div class="col-12 col-md-5">
-                  <h5 class="resume-lines__title animate-in-up">Baccalaureate Degree .</h5>
-                  <p class="resume-lines__source animate-in-up">Option :
-                    <a href="#0" class="text-link-bold" target="_blank"> Physics.</a>
-                  </p>
-                </div>
-                <div class="col-12 col-md-5">
-                  <p class="small resume-lines__descr animate-in-up">I hold a Baccalaureate Degree in Physics, 
-                    My studies focused on understanding physical principles, mathematics, and scientific reasoning.</p>
-                </div>
-              </div>
-          
-            </div>
-            <!-- Education Lines End -->
-
-          </div>
-          <!-- Content Block - Education End -->
-
-          <!-- Content Block - Experience Start -->
-          <div class="content__block block-large">
-
-            <!-- H3 Block Start -->
-            <div class="section-h3">
-              <h3 class="h3__title animate-in-up">Work experience</h3>
-            </div>
-            <!-- H3 Block End -->
-
-            <!-- Experience Lines Start -->
-            <div class="container-fluid p-0 resume-lines">
-              <!-- experience single item -->
-              <div class="row g-0 resume-lines__item animate-in-up">
-                <div class="col-12 col-md-2">
-                  <span class="resume-lines__date animate-in-up">2025</span>
-                </div>
-                <div class="col-12 col-md-5">
-                  <h5 class="resume-lines__title animate-in-up">Professional Internship</h5>
-                  <p class="resume-lines__source animate-in-up">in  
-                    <a href="#0" class="text-link-bold" target="_blank">Excel Clearance</a>
-                  </p>
-                </div>
-                <div class="col-12 col-md-5">
-                  <p class="small resume-lines__descr animate-in-up">During my professional internship, I developed Excel Clearance Express, a modern web application that helps a customs brokerage company manage clients, suppliers, shipments, invoices, payments, and customs operations through a secure and intuitive platform.</p>
-                </div>
-              </div>
-              <!-- experience single item -->
-              <div class="row g-0 resume-lines__item animate-in-up">
-                <div class="col-12 col-md-2">
-                  <span class="resume-lines__date animate-in-up">2024</span>
-                </div>
-                <div class="col-12 col-md-5">
-                  <h5 class="resume-lines__title animate-in-up">Web Developer</h5>
-                  <p class="resume-lines__source animate-in-up">in the
-                    <a href="#0" class="text-link-bold" target="_blank">IVR Club</a>
-                  
-                  </p>
-                </div>
-                <div class="col-12 col-md-5">
-                  <p class="small resume-lines__descr animate-in-up">As a Web Developer at the IVR Club,
-                     I focused on creating responsive interfaces, optimizing performance.</p>
-                </div>
-              </div>
-              <!-- experience single item -->
-        
-            </div>
-            <!-- Experience Lines End -->
-
-          </div>
-          <!-- Content Block - Experience End -->
-
-          <!-- Content Block - H3 Block Start -->
-          <div class="content__block">
-            <div class="section-h3 section-h3-grid">
-              <h3 class="h3__title animate-in-up">My favourite tools</h3>
+            <div class="project-card-actions">
+              <button class="project-view-link" data-project-trigger="ivr-club">
+                <span>Détails</span>
+                <i class="ph-bold ph-arrow-right"></i>
+              </button>
             </div>
           </div>
-          <!-- Content Block - H3 Block End -->
+        </article>
 
-          <!-- Content Block - Tools List Start -->
-          <div class="content__block grid-block block-large">
-            <!-- Tools List Start -->
-            <div class="tools-cards d-flex justify-content-start flex-wrap">
-              <!-- tools simgle item -->
-              <div class="tools-cards__item d-flex grid-item-s animate-card-5">
-                <div class="tools-cards__card">
-                  <img class="tools-cards__icon animate-in-up" src="img/icons/icon-photoshop.svg" alt="Tools Icon">
-                  <h6 class="tools-cards__caption animate-in-up">Photoshop</h6>
-                </div>
-              </div>
-              <!-- tools simgle item -->
-              <div class="tools-cards__item d-flex grid-item-s animate-card-5">
-                <div class="tools-cards__card">
-                  <img class="tools-cards__icon animate-in-up" src="img/icons/icon-figma.svg" alt="Tools Icon">
-                  <h6 class="tools-cards__caption animate-in-up">Figma</h6>
-                </div>
-              </div>
-              <!-- tools simgle item -->
-              <div class="tools-cards__item d-flex grid-item-s animate-card-5">
-                <div class="tools-cards__card">
-                  <img class="tools-cards__icon animate-in-up" src="img/icons/icon-illustrator.svg" alt="Tools Icon">
-                  <h6 class="tools-cards__caption animate-in-up">Illustrator</h6>
-                </div>
-              </div>
-              <!-- tools simgle item 
-              <div class="tools-cards__item d-flex grid-item-s animate-card-5">
-                <div class="tools-cards__card">
-                  <img class="tools-cards__icon animate-in-up" src="img/icons/icon-sketch.svg" alt="Tools Icon">
-                  <h6 class="tools-cards__caption animate-in-up">Sketch</h6>
-                </div>
-              </div>-->
-              <!-- tools simgle item -->
-              <div class="tools-cards__item d-flex grid-item-s animate-card-5">
-                <div class="tools-cards__card">
-                  <img class="tools-cards__icon animate-in-up" src="img/icons/icon-blender.svg" alt="Tools Icon">
-                  <h6 class="tools-cards__caption animate-in-up">Blender</h6>
-                </div>
-              </div>
-              <!-- tools simgle item -->
-              <div class="tools-cards__item d-flex grid-item-s animate-card-5">
-                <div class="tools-cards__card">
-                  <img class="tools-cards__icon animate-in-up" src="img/icons/icon-html.svg" alt="Tools Icon">
-                  <h6 class="tools-cards__caption animate-in-up">HTML5</h6>
-                </div>
-              </div>
-              <!-- tools simgle item -->
-              <div class="tools-cards__item d-flex grid-item-s animate-card-5">
-                <div class="tools-cards__card">
-                  <img class="tools-cards__icon animate-in-up" src="img/icons/icon-css.svg" alt="Tools Icon">
-                  <h6 class="tools-cards__caption animate-in-up">CSS3</h6>
-                </div>
-              </div>
-              <!-- tools simgle item 
-              <div class="tools-cards__item d-flex grid-item-s animate-card-5">
-                <div class="tools-cards__card">
-                  <img class="tools-cards__icon animate-in-up" src="img/icons/icon-react.svg" alt="Tools Icon">
-                  <h6 class="tools-cards__caption animate-in-up">Notion</h6>
-                </div>
-              </div>
-            </div>-->
-            <!-- Tools List End 
-          </div>-->
-          <!-- Content Block - Tools List End -->
-
-          <!-- Content Block - H2 Block Start 
-          <div class="content__block section-title">
-            <p class="h2__subtitle animate-in-up">
-              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="13px" height="13px" viewBox="0 0 13 13" fill="currentColor">
-                <path fill="currentColor" d="M5.6,12.6c-0.5-0.8-0.7-2.4-1.7-3.5c-1-1-2.7-1.2-3.5-1.7C-0.1,7-0.1,6,0.4,5.6c0.8-0.5,2.3-0.6,3.5-1.8
-                  C5,2.8,5.1,1.2,5.6,0.4C6-0.1,7-0.1,7.4,0.4c0.5,0.8,0.7,2.4,1.8,3.5c1.2,1.2,2.6,1.2,3.5,1.7c0.6,0.4,0.6,1.4,0,1.7
-                  C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z"/>
-              </svg>
-              <span>Testimonials</span>
+        <!-- PROJECT 5: GAMEATHON FACTICITY 2025 (UNESCO) -->
+        <article class="project-bento-card" data-category="associatif">
+          <div class="project-image-box">
+            <img src="assets/images/dept-informatique.svg" alt="Gameathon FactiCITY UNESCO">
+            <div class="project-quick-overlay">
+              <button class="btn-pill-download" style="padding: 8px 18px; font-size: 0.85rem;"
+                data-project-trigger="gameathon">
+                <i class="ph-bold ph-eye"></i> Aperçu Détaillé
+              </button>
+            </div>
+          </div>
+          <div class="project-info-box">
+            <div class="project-pill-tags">
+              <span class="pill-tag">UNESCO Maghreb</span>
+              <span class="pill-tag purple">Jeux Éducatifs</span>
+              <span class="pill-tag pink">Bouznika</span>
+            </div>
+            <h3 class="project-card-heading">Gameathon FactiCITY 2025</h3>
+            <p class="project-card-summary">
+              Conception en équipe de jeux numériques éducatifs de sensibilisation à la désinformation et à l'esprit
+              critique sous l’égide du Ministère de la Jeunesse et de l'UNESCO Maghreb.
             </p>
-            <h2 class="h2__title animate-in-up">Clients say about me</h2>
-          </div>-->
-          <!-- Content Block - H2 Block End -->
+            <div class="project-card-actions">
+              <button class="project-view-link" data-project-trigger="gameathon">
+                <span>Détails</span>
+                <i class="ph-bold ph-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </article>
 
-          <!-- Content Block - Testimonials Slider Start 
-          <div class="content__block">-->
-
-            <!-- Testimonials Slider Start 
-            <div class="testimonials-slider">-->
-              <!-- slider main container 
-              <div class="swiper-testimonials">-->
-                <!-- additional required wrapper 
-                <div class="swiper-wrapper">-->
-                  <!-- slides 
-                  <div class="swiper-slide">
-                    <div class="testimonials-card animate-in-up">
-                      <div class="testimonials-card__tauthor d-flex animate-in-up">
-                        <div class="tauthor__avatar">
-                          <img src="https://dummyimage.com/400x400/4d4d4d/636363" alt="Review Author">
-                        </div>
-                        <div class="tauthor__info d-flex flex-column justify-content-center">
-                          <p class="tauthor__name">Alex Tomato</p>
-                          <p class="tauthor__position">Brand Manager in 
-                            <a href="#0" class="text-link-bold" target="_blank">Instant Design</a>
-                          </p>
-                          <div class="tauthor__rating d-flex">
-                            <i class="ph-fill ph-star"></i>
-                            <i class="ph-fill ph-star"></i>
-                            <i class="ph-fill ph-star"></i>
-                            <i class="ph-fill ph-star"></i>
-                            <i class="ph-fill ph-star"></i>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="testimonials-card__descr animate-in-up">
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut 
-                          laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud. Dolore magna aliquam.</p>
-                      </div>
-                      <div class="testimonials-card__btnholder animate-in-up">
-                        <a class="btn mobile-vertical btn-line btn-transparent slide-right" href="#0">
-                          <span class="btn-caption">Project Page</span>
-                          <i class="ph-bold ph-arrow-right"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="testimonials-card  animate-in-up">
-                      <div class="testimonials-card__tauthor d-flex  animate-in-up">
-                        <div class="tauthor__avatar">
-                          <img src="https://dummyimage.com/400x400/4d4d4d/636363" alt="Review Author">
-                        </div>
-                        <div class="tauthor__info d-flex flex-column justify-content-center">
-                          <p class="tauthor__name">Jenny Pineapple</p>
-                          <p class="tauthor__position">SEO in 
-                            <a href="#0" class="text-link-bold" target="_blank">Creative People</a>
-                          </p>
-                          <div class="tauthor__rating d-flex">
-                            <i class="ph-fill ph-star"></i>
-                            <i class="ph-fill ph-star"></i>
-                            <i class="ph-fill ph-star"></i>
-                            <i class="ph-fill ph-star"></i>
-                            <i class="ph-fill ph-star"></i>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="testimonials-card__descr animate-in-up">
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut 
-                          laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud. Dolore magna aliquam.</p>
-                      </div>
-                      <div class="testimonials-card__btnholder animate-in-up">
-                        <a class="btn mobile-vertical btn-line btn-transparent slide-right" href="#0">
-                          <span class="btn-caption">Project Page</span>
-                          <i class="ph-bold ph-arrow-right"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>-->
-                <!-- navigation buttons 
-                <div class="swiper-button-prev mxd-slider-btn-square mxd-slider-btn-square-prev animate-in-up">
-                  <a class="btn btn-square btn-square-s btn-outline slide-left" href="#0">
-                    <i class="ph-bold ph-caret-left"></i>
-                  </a>
-                </div>
-                <div class="swiper-button-next mxd-slider-btn-square mxd-slider-btn-square-next animate-in-up">
-                  <a class="btn btn-square btn-square-s btn-outline slide-right" href="#0">
-                    <i class="ph-bold ph-caret-right"></i>
-                  </a>
-                </div>
-              </div>
-            </div>-->
-            <!-- Testimonials Slider End 
-
-          </div>-->
-          <!-- Content Block - Testimonials Slider End 
-
-        </section>-->
-
-
-
-        <!-- Resume Section End -->
-
-        <!-- Contact Section Start -->
-        <section id="contact" class="inner contact">
-
-          <!-- Content Block - H2 Section Title Start -->
-          <div class="content__block section-title">
-            <p class="h2__subtitle  animate-in-up">
-              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="13px" height="13px" viewBox="0 0 13 13" fill="currentColor">
-                <path fill="currentColor" d="M5.6,12.6c-0.5-0.8-0.7-2.4-1.7-3.5c-1-1-2.7-1.2-3.5-1.7C-0.1,7-0.1,6,0.4,5.6c0.8-0.5,2.3-0.6,3.5-1.8
-                  C5,2.8,5.1,1.2,5.6,0.4C6-0.1,7-0.1,7.4,0.4c0.5,0.8,0.7,2.4,1.8,3.5c1.2,1.2,2.6,1.2,3.5,1.7c0.6,0.4,0.6,1.4,0,1.7
-                  C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z"/>
-              </svg>
-              <span>Contact</span>
+        <!-- PROJECT 6: PHOTOGRAPHY CLUB FSM & SMARTALIM (SIAM) -->
+        <article class="project-bento-card" data-category="design">
+          <div class="project-image-box">
+            <img src="assets/images/recaravan.svg" alt="Prix du Design UMI & SIAM">
+            <div class="project-quick-overlay">
+              <button class="btn-pill-download" style="padding: 8px 18px; font-size: 0.85rem;"
+                data-project-trigger="smartalim">
+                <i class="ph-bold ph-eye"></i> Aperçu Détaillé
+              </button>
+            </div>
+          </div>
+          <div class="project-info-box">
+            <div class="project-pill-tags">
+              <span class="pill-tag pink">Prix du Design</span>
+              <span class="pill-tag purple">SIAM 2025</span>
+              <span class="pill-tag">Smartalim</span>
+            </div>
+            <h3 class="project-card-heading">Prix du Design &amp; Plateforme Smartalim</h3>
+            <p class="project-card-summary">
+              Lauréat du Prix du Design lors du concours « UMI Out Of The Box » (« Lumière sur l'Inattendu ») et
+              représentant de la plateforme numérique agricole Smartalim au stand de l'UMI (SIAM 2025).
             </p>
-            <h2 class="h2__title  animate-in-up">Let's make something awesome together!</h2>
-          </div>
-          <!-- Content Block - H2 Section Title End -->
-
-          <!-- Content Block - Contact Form Start -->
-          <div class="content__block grid-block block-grid-large">
-            <div class="form-container">
-
-              <!-- Reply Messages Start -->
-              <div class="form__reply centered text-center">
-                <i class="ph-bold ph-smiley reply__icon"></i>
-                <p class="reply__title">Done!</p>
-                <span class="reply__text">Thanks for your message. I'll get back as soon as possible.</span>
-              </div> 
-              <!-- Reply Messages End -->
-
-              <!-- Contact Form Start -->
-        
-              <form class="form contact-form" id="contact-form" action="https://api.web3forms.com/submit" method="POST">
-                <input type="hidden" name="access_key" value="f982af88-c897-47cf-b15e-fd66a61dd36b">
-                
-                <div class="container-fluid p-0">
-                  <div class="row gx-0">
-                    <div class="col-12 col-md-6 form__item">
-                      <input type="text" name="Name" placeholder="Your Name*" required>
-                    </div>
-                    <div class="col-12 col-md-6 form__item">
-                      <input type="text" name="Company" placeholder="Company Name">
-                    </div>
-                    <div class="col-12 col-md-6 form__item">
-                      <input type="email" name="E-mail" placeholder="Email Address*" required>
-                    </div>
-                    <div class="col-12 col-md-6 form__item">
-                      <input type="tel" name="Phone" placeholder="Phone Number*" required>
-                    </div>
-                    <div class="col-12 form__item">
-                      <textarea name="Message" placeholder="A Few Words*" required></textarea>
-                    </div>
-                    <div class="col-12 form__item">
-                      <button class="btn btn-default btn-hover btn-hover-accent" type="submit">
-                        <span class="btn-caption">Send Message</span>
-                        <i class="ph-bold ph-paper-plane-tilt"></i>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                
-                <div id="result" class="mt-3"></div>
-              </form>
-
-              
-              <!-- Contact Form End -->
-
+            <div class="project-card-actions">
+              <button class="project-view-link" data-project-trigger="smartalim">
+                <span>Détails</span>
+                <i class="ph-bold ph-arrow-right"></i>
+              </button>
             </div>
           </div>
-          <!-- Content Block - Contact Form End -->
-
-          <!-- Content Block - Socials Cards Start -->
-          <div class="content__block grid-block">
-            <div class="socials-cards d-flex justify-content-start flex-wrap">
-              <!-- socials item-->
-              <div class="socials-cards__item d-flex grid-item-s animate-card-5">
-                <div class="socials-cards__card">
-                  <i class="ph ph-linkedin-logo"></i>
-                  <a class="socials-cards__link" href="https://www.linkedin.com/in/reda-sahli-b93807268/" target="_blank"></a>
-                </div>
-              </div> 
-              <!-- socials item
-              <div class="socials-cards__item d-flex grid-item-s animate-card-5">
-                <div class="socials-cards__card">
-                  <i class="ph-bold ph-behance-logo"></i>
-                  <a class="socials-cards__link" href="https://www.behance.net/" target="_blank"></a>
-                </div>
-              </div> -->
-              <!-- socials item -->
-              <div class="socials-cards__item d-flex grid-item-s animate-card-5">
-                <div class="socials-cards__card">
-                  <i class="ph-bold ph-instagram-logo"></i>
-                  <a class="socials-cards__link" href="https://www.instagram.com/sahli_reda_/" target="_blank"></a>
-                </div>
-              </div>
-              <!-- socials item -->
-              <div class="socials-cards__item d-flex grid-item-s animate-card-5">
-                <div class="socials-cards__card">
-                <i class="ph ph-github-logo"></i>
-                  <a class="socials-cards__link" href="https://github.com/Reda-sahli" target="_blank"></a>
-                </div>
-              </div>
-              <!-- socials item 
-              <div class="socials-cards__item d-flex grid-item-s animate-card-5">
-                <div class="socials-cards__card">
-                  <i class="ph-bold ph-pinterest-logo"></i>
-                  <a class="socials-cards__link" href="https://www.pinterest.com/" target="_blank"></a>
-                </div>
-              </div>-->
-            </div>
-          </div>
-          <!-- Content Block - Socials Cards End -->
-
-          <!-- Content Block - Teaser Start -->
-          <div class="content__block">
-            <div class="teaser">
-              <p class="teaser__text animate-in-up">Want to know more about me, tell me 
-                about your project or just to say hello? 
-                <a class="text-link-bold" href="mailto:example@example.com?subject=Message%20from%20your%20site">Drop me a line</a> 
-                and I'll get back 
-                as soon as possible.
-              </p>
-            </div>
-          </div>
-          <!-- Content Block - Teaser End -->
-
-          <!-- Content Block - Contact Data Start -->
-          <div class="content__block">
-            <div class="container-fluid p-0 contact-lines animate-in-up">
-              <div class="row g-0 contact-lines__item">
-                <!-- data item -->
-                <div class="col-12 col-md-4 contact-lines__data">
-                  <p class="contact-lines__title animate-in-up">Location</p>
-                  <p class="contact-lines__text animate-in-up">
-                    <a class="text-link-bold" href="https://maps.app.goo.gl/xMJXTEUeHkv6kYRQ6" target="_blank">Morocco , Méknes </a>
-                  </p>
-                </div>
-                <!-- data item -->
-                <div class="col-12 col-md-4 contact-lines__data">
-                  <p class="contact-lines__title animate-in-up">Phone</p>
-                  <p class="contact-lines__text animate-in-up">
-                    <a class="text-link-bold" href="tel:+12127089400">+212 631368295</a>
-                  </p>
-                </div>
-                <!-- data item -->
-                <div class="col-12 col-md-4 contact-lines__data">
-                  <p class="contact-lines__title animate-in-up">Email</p>
-                  <p class="contact-lines__text animate-in-up">
-                    <a class="text-link-bold" href="mailto:coodenow@gmail.com?subject=Message%20from%20your%20site">coodenow@gmail.com</a>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Content Block - Contact Data End -->
-
-        </section>
-        <!-- Contact Section End -->
+        </article>
 
       </div>
-    </div>
-    <!-- Page Content End -->
+    </section>
 
-    <!-- Root element of PhotoSwipe. Must have class pswp. -->
-    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- SECTION: SKILLS / COMPÉTENCES DU CV -->
+    <section id="skills" class="content-section">
+      <div class="section-tag-row">
+        <div class="section-pill-label">
+          <i class="ph-bold ph-code"></i>
+          <span>COMPÉTENCES TECHNIQUES</span>
+        </div>
+        <h2 class="section-title">Technologies &amp; Outils</h2>
+        <p class="section-desc">Technologies maîtrisées issues du parcours académique et des projets professionnels.</p>
+      </div>
 
-      <!-- Background of PhotoSwipe.
-      It's a separate element, as animating opacity is faster than rgba(). -->
-      <div class="pswp__bg"></div>
+      <div class="skills-quad-grid">
 
-      <!-- Slides wrapper with overflow:hidden. -->
-      <div class="pswp__scroll-wrap">
-
-        <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
-        <!-- don't modify these 3 pswp__item elements, data is added later on. -->
-        <div class="pswp__container">
-          <div class="pswp__item"></div>
-          <div class="pswp__item"></div>
-          <div class="pswp__item"></div>
+        <!-- WEB DEV -->
+        <div class="skill-box-card">
+          <div class="skill-box-header">
+            <div class="skill-icon-wrap"><i class="ph-bold ph-browsers"></i></div>
+            <h3 class="skill-box-title">Développement Web</h3>
+          </div>
+          <div class="skill-pills-wrap">
+            <span class="skill-badge"><i class="ph-bold ph-atom"></i> React 19</span>
+            <span class="skill-badge"><i class="ph-bold ph-cpu"></i> Next.js</span>
+            <span class="skill-badge"><i class="ph-bold ph-paint-brush"></i> TailwindCSS</span>
+            <span class="skill-badge"><i class="ph-bold ph-file-js"></i> JavaScript (ES6+)</span>
+            <span class="skill-badge"><i class="ph-bold ph-file-html"></i> HTML5 / CSS3</span>
+            <span class="skill-badge"><i class="ph-bold ph-lightning"></i> Vite</span>
+          </div>
         </div>
 
-        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-        <div class="pswp__ui pswp__ui--hidden">
-
-          <div class="pswp__top-bar">
-
-            <!--  Controls are self-explanatory. Order can be changed. -->
-
-            <div class="pswp__counter"></div>
-
-            <button class="pswp__button pswp__button--close link-s" title="Close (Esc)"></button>
-
-            <button class="pswp__button pswp__button--share link-s" title="Share"></button>
-
-            <button class="pswp__button pswp__button--fs link-s" title="Toggle fullscreen"></button>
-
-            <button class="pswp__button pswp__button--zoom link-s" title="Zoom in/out"></button>
-
-            <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
-            <!-- element will get class pswp__preloader-active when preloader is running -->
-            <div class="pswp__preloader">
-              <div class="pswp__preloader__icn">
-                <div class="pswp__preloader__cut">
-                  <div class="pswp__preloader__donut"></div>
-                </div>
-              </div>
-            </div>
+        <!-- BACKEND & DB -->
+        <div class="skill-box-card">
+          <div class="skill-box-header">
+            <div class="skill-icon-wrap pink"><i class="ph-bold ph-database"></i></div>
+            <h3 class="skill-box-title">Back-End &amp; Bases de Données</h3>
           </div>
+          <div class="skill-pills-wrap">
+            <span class="skill-badge"><i class="ph-bold ph-tree-structure"></i> Node.js</span>
+            <span class="skill-badge"><i class="ph-bold ph-server"></i> Express.js</span>
+            <span class="skill-badge"><i class="ph-bold ph-hard-drives"></i> PostgreSQL</span>
+            <span class="skill-badge"><i class="ph-bold ph-plugs"></i> API REST (40+ endpoints)</span>
+            <span class="skill-badge"><i class="ph-bold ph-shield-check"></i> JWT &amp; Bcrypt</span>
+            <span class="skill-badge"><i class="ph-bold ph-key"></i> Contrôle d'accès RBAC</span>
+          </div>
+        </div>
 
-            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-              <div class="pswp__share-tooltip"></div>
-            </div>
+        <!-- MOBILE DEV -->
+        <div class="skill-box-card">
+          <div class="skill-box-header">
+            <div class="skill-icon-wrap"><i class="ph-bold ph-device-mobile"></i></div>
+            <h3 class="skill-box-title">Développement Mobile</h3>
+          </div>
+          <div class="skill-pills-wrap">
+            <span class="skill-badge"><i class="ph-bold ph-coffee"></i> Java</span>
+            <span class="skill-badge"><i class="ph-bold ph-diamonds-four"></i> Kotlin</span>
+            <span class="skill-badge"><i class="ph-bold ph-android-logo"></i> Android Studio</span>
+            <span class="skill-badge"><i class="ph-bold ph-devices"></i> Mobile Architecture</span>
+          </div>
+        </div>
 
-            <button class="pswp__button pswp__button--arrow--left link-s" title="Previous (arrow left)"></button>
-
-            <button class="pswp__button pswp__button--arrow--right link-s" title="Next (arrow right)"></button>
-
-            <div class="pswp__caption">
-              <div class="pswp__caption__center"></div>
-            </div>
-
+        <!-- DESIGN & MEDIAS -->
+        <div class="skill-box-card">
+          <div class="skill-box-header">
+            <div class="skill-icon-wrap pink"><i class="ph-bold ph-bezier-curve"></i></div>
+            <h3 class="skill-box-title">Design &amp; Médias</h3>
+          </div>
+          <div class="skill-pills-wrap">
+            <span class="skill-badge"><i class="ph-bold ph-figma-logo"></i> UI/UX Design &amp; Maquettage</span>
+            <span class="skill-badge"><i class="ph-bold ph-pen-nib"></i> Adobe Illustrator</span>
+            <span class="skill-badge"><i class="ph-bold ph-image"></i> Adobe Photoshop</span>
+            <span class="skill-badge"><i class="ph-bold ph-film-strip"></i> After Effects &amp; Vidéo</span>
+            <span class="skill-badge"><i class="ph-bold ph-cube"></i> Animation 3D (Blender)</span>
+            <span class="skill-badge"><i class="ph-bold ph-palette"></i> Identité Visuelle</span>
+          </div>
         </div>
 
       </div>
+    </section>
 
+    <!-- SECTION: EXPÉRIENCE PROFESSIONNELLE (ALTERNATING TIMELINE) -->
+    <section id="experience" class="education-section-block">
+      <div class="section-tag-row">
+        <div class="section-pill-label">
+          <i class="ph-bold ph-briefcase"></i>
+          <span>PARCOURS</span>
+        </div>
+        <h2 class="section-title dual-gradient">
+          <span class="title-gradient-left">Expérience </span><span class="title-gradient-right">Professionnelle</span>
+        </h2>
+      </div>
+
+      <div class="education-timeline-container">
+
+        <!-- ITEM 1: LEFT -->
+        <div class="edu-timeline-item left">
+          <div class="edu-timeline-node"></div>
+          <div class="edu-glass-card">
+            <div class="edu-card-top">
+              <h3 class="edu-degree-title">Stage Professionnel de Fin d’Études — Développeur Full-Stack</h3>
+              <span class="edu-year-tag"><i class="ph-bold ph-calendar-blank"></i> 03/2026 — 06/2026</span>
+            </div>
+            <div class="edu-institution-name">
+              <a href="https://excelclearance.com/" target="_blank" rel="noopener noreferrer"
+                style="display: inline-flex; align-items: center; gap: 6px; color: #38bdf8;">
+                EXCEL CLEARANCE — Casablanca, Maroc
+                <i class="ph-bold ph-arrow-square-out"></i>
+              </a>
+            </div>
+            <p class="edu-specialization-text">
+              <strong>Application Web Métier</strong> • Conception et développement complet d'une solution de gestion
+              logistique et de facturation douanière accessible sur <a href="https://excelclearance.com/"
+                target="_blank" style="color: #38bdf8; text-decoration: underline;">excelclearance.com</a>. Stack :
+              React 19, TailwindCSS, Node.js, Express.js, PostgreSQL, API REST (40 endpoints), sécurité JWT/Bcrypt et
+              dashboard analytique.
+            </p>
+          </div>
+        </div>
+
+        <!-- ITEM 2: RIGHT -->
+        <div class="edu-timeline-item right">
+          <div class="edu-timeline-node"></div>
+          <div class="edu-glass-card">
+            <div class="edu-card-top">
+              <h3 class="edu-degree-title">Photographe &amp; Designer Graphique Freelance</h3>
+              <span class="edu-year-tag"><i class="ph-bold ph-calendar-blank"></i> Freelance</span>
+            </div>
+            <div class="edu-institution-name">Clients &amp; Entreprises</div>
+            <p class="edu-specialization-text">
+              <strong>Création Visuelle &amp; UI</strong> • Création d’identités visuelles pour marques, chartes
+              graphiques complètes, production photo/vidéo et maquettage fonctionnel d'interfaces applicatives.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION: ÉDUCATION (EXACT INSPIRATION TIMELINE DESIGN)
+         ========================================================================= -->
+    <section id="education" class="education-section-block">
+      <!-- Section Header -->
+      <div class="section-tag-row">
+        <div class="section-pill-label">
+          <div class="status-dot-cyan"></div>
+          <span>BACKGROUND</span>
+        </div>
+        <h2 class="section-title dual-gradient">
+          <span class="title-gradient-left">Edu</span><span class="title-gradient-right">cation</span>
+        </h2>
+      </div>
+
+      <!-- Center Alternating Timeline (Exact as in CV) -->
+      <div class="education-timeline-container">
+
+        <!-- TIMELINE ITEM 1: LEFT (Licence Fondamentale) -->
+        <div class="edu-timeline-item left">
+          <div class="edu-timeline-node"></div>
+          <div class="edu-glass-card">
+            <div class="edu-card-top">
+              <h3 class="edu-degree-title">Licence Fondamentale en Génie Informatique</h3>
+              <span class="edu-year-tag"><i class="ph-bold ph-book-open"></i> 2025 — 2026</span>
+            </div>
+            <div class="edu-institution-name">Université Moulay Ismaïl — Faculté des Sciences, Meknès</div>
+            <p class="edu-specialization-text">
+              <strong>Spécialisation</strong> • Génie Logiciel, Systèmes Distribués, Conception de Bases de données
+              &amp; Développement Web Moderne.
+            </p>
+          </div>
+        </div>
+
+        <!-- TIMELINE ITEM 2: RIGHT (DEUG) -->
+        <div class="edu-timeline-item right">
+          <div class="edu-timeline-node"></div>
+          <div class="edu-glass-card">
+            <div class="edu-card-top">
+              <h3 class="edu-degree-title">Diplôme d’Études Universitaires Générales (DEUG)</h3>
+              <span class="edu-year-tag"><i class="ph-bold ph-book-open"></i> 2022 — 2025</span>
+            </div>
+            <div class="edu-institution-name">Université Moulay Ismaïl — Filière Génie Informatique, Meknès</div>
+            <p class="edu-specialization-text">
+              <strong>Tronc Commun</strong> • Algorithmes, Programmation, Structures de Données, Architecture des
+              Ordinateurs &amp; Réseaux.
+            </p>
+          </div>
+        </div>
+
+        <!-- TIMELINE ITEM 3: LEFT (Baccalauréat) -->
+        <div class="edu-timeline-item left">
+          <div class="edu-timeline-node"></div>
+          <div class="edu-glass-card">
+            <div class="edu-card-top">
+              <h3 class="edu-degree-title">Baccalauréat — Option Sciences Physiques</h3>
+              <span class="edu-year-tag"><i class="ph-bold ph-book-open"></i> 2021 — 2022</span>
+            </div>
+            <div class="edu-institution-name">Meknès, Maroc</div>
+            <p class="edu-specialization-text">
+              <strong>Formation</strong> • Mathématiques, Sciences Physiques, Logique &amp; Raisonnement Scientifique.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: CERTIFICATIONS & FORMATIONS (WITH AUTHENTIC BCDIPLOMA CERTIFICATE LINKS) -->
+    <section id="certifications" class="content-section">
+      <div class="section-tag-row">
+        <div class="section-pill-label">
+          <i class="ph-bold ph-certificate"></i>
+          <span>FORMATIONS &amp; ATTESTATIONS VÉRIFIÉES</span>
+        </div>
+        <h2 class="section-title">Certifications &amp; Formations</h2>
+        <p class="section-desc">Formations internationales, certifications d'employabilité et attestations vérifiables.
+        </p>
+      </div>
+
+      <div class="cert-cards-grid">
+
+        <!-- CERTIFICATE 1: HTML, CSS, and JavaScript for Web Developers (WITH AUTHENTIC VERIFICATION LINK) -->
+        <a href="https://certificate.bcdiploma.com/check/3A403DE97929409360F6169418B8F62F43AFF2B94A4EA1421D27AFE1E9734484UHJuRkJFUEQrMnVnb0QxSElxQU1oS24yWGM3akszNHFrMmptSlgzeTlCM3F4bURB"
+          target="_blank" rel="noopener noreferrer" class="cert-card"
+          title="Vérifier le Certificat en ligne (BCdiploma)">
+          <div class="cert-badge-top">
+            <span class="pill-tag">Certificat Vérifié</span>
+            <i class="ph-bold ph-arrow-square-out" style="color: #38bdf8; font-size: 1.2rem;"></i>
+          </div>
+          <h3 class="cert-title">HTML, CSS, and JavaScript for Web Developers</h3>
+          <p class="cert-issuer">Johns Hopkins University • IFIC-AUF</p>
+          <div
+            style="font-size: 0.78rem; color: #34d399; display: flex; align-items: center; gap: 5px; margin-top: auto;">
+            <i class="ph-bold ph-seal-check"></i>
+            <span>Attestation BCdiploma Authentifiée ↗</span>
+          </div>
+        </a>
+
+        <!-- CERTIFICATE 2: Réussir son employabilité à l'ère du digital (AUF) (WITH AUTHENTIC VERIFICATION LINK) -->
+        <a href="https://certificate.bcdiploma.com/check/3A403DE97929409360F6169418B8F62F43AFF2B94A4EA1421D27AFE1E9734484UHJuRkJFUEQrMnVnb0QxSElxQU1oS24yWGM3akszNHFrMmptSlgzeTlCM3F4bURB"
+          target="_blank" rel="noopener noreferrer" class="cert-card"
+          title="Vérifier le Certificat IFIC-AUF (BCdiploma)">
+          <div class="cert-badge-top">
+            <span class="pill-tag pink">Certificat AUF Vérifié</span>
+            <i class="ph-bold ph-arrow-square-out" style="color: #f472b6; font-size: 1.2rem;"></i>
+          </div>
+          <h3 class="cert-title">Réussir son employabilité à l’ère du digital (13 h)</h3>
+          <p class="cert-issuer">AUF — Centre d’Employabilité Francophone de Meknès (11/2025)</p>
+          <div
+            style="font-size: 0.78rem; color: #34d399; display: flex; align-items: center; gap: 5px; margin-top: auto;">
+            <i class="ph-bold ph-seal-check"></i>
+            <span>Attestation BCdiploma Authentifiée ↗</span>
+          </div>
+        </a>
+
+        <!-- CERTIFICATE 3: Photography in Research School (Università di Napoli Federico II) -->
+        <div class="cert-card">
+          <div class="cert-badge-top">
+            <span class="pill-tag purple">Recherche &amp; Photo</span>
+            <i class="ph-bold ph-certificate" style="color: #c084fc;"></i>
+          </div>
+          <h3 class="cert-title">Photography in Research School (2e édition)</h3>
+          <p class="cert-issuer">Università degli Studi di Napoli Federico II • SULIEIA (12/2025)</p>
+        </div>
+
+        <!-- CERTIFICATE 4: Lean Six Sigma -->
+        <div class="cert-card">
+          <div class="cert-badge-top">
+            <span class="pill-tag">Qualité &amp; Process</span>
+            <i class="ph-bold ph-certificate" style="color: #38bdf8;"></i>
+          </div>
+          <h3 class="cert-title">Lean Six Sigma Yellow Belt Certification</h3>
+          <p class="cert-issuer">ECLEE</p>
+        </div>
+
+        <!-- CERTIFICATE 5: Innovation Camp -->
+        <div class="cert-card">
+          <div class="cert-badge-top">
+            <span class="pill-tag purple">Innovation</span>
+            <i class="ph-bold ph-certificate" style="color: #c084fc;"></i>
+          </div>
+          <h3 class="cert-title">Certificat de Réussite, Innovation Camp</h3>
+          <p class="cert-issuer">Injaz Al Maghrib &amp; Crédit Agricole du Maroc (CAM)</p>
+        </div>
+
+        <!-- CERTIFICATE 6: VSG & 3D -->
+        <div class="cert-card">
+          <div class="cert-badge-top">
+            <span class="pill-tag pink">Business &amp; 3D</span>
+            <i class="ph-bold ph-certificate" style="color: #f472b6;"></i>
+          </div>
+          <h3 class="cert-title">Ventures Strategy Game &amp; Impression 3D</h3>
+          <p class="cert-issuer">Al Akhawayn University &amp; Faculté des Sciences (Club IVR)</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: CONTACT -->
+    <section id="contact" class="content-section">
+      <div class="section-tag-row">
+        <div class="section-pill-label">
+          <i class="ph-bold ph-envelope"></i>
+          <span>CONTACT</span>
+        </div>
+        <h2 class="section-title">Discutons de vos Projets</h2>
+        <p class="section-desc">À la recherche d'un stage ou d'une opportunité? Envoyez-moi un message direct.</p>
+      </div>
+
+      <div class="contact-shell-grid">
+
+        <!-- Direct Contact Info from CV -->
+        <div class="contact-info-column">
+          <a href="mailto:coodenow@gmail.com" class="contact-card-link">
+            <div class="contact-icon-bubble"><i class="ph-bold ph-envelope-simple"></i></div>
+            <div>
+              <div style="font-size: 0.75rem; text-transform: uppercase; color: var(--text-dim); font-weight: 700;">
+                Email Direct</div>
+              <div style="font-size: 0.95rem; font-weight: 600; color: var(--text-main);">coodenow@gmail.com</div>
+            </div>
+          </a>
+
+          <a href="tel:+212631368295" class="contact-card-link">
+            <div class="contact-icon-bubble"><i class="ph-bold ph-phone-call"></i></div>
+            <div>
+              <div style="font-size: 0.75rem; text-transform: uppercase; color: var(--text-dim); font-weight: 700;">
+                Téléphone / WhatsApp</div>
+              <div style="font-size: 0.95rem; font-weight: 600; color: var(--text-main);">+212 6 31 36 82 95</div>
+            </div>
+          </a>
+
+          <div class="contact-card-link">
+            <div class="contact-icon-bubble"><i class="ph-bold ph-map-pin"></i></div>
+            <div>
+              <div style="font-size: 0.75rem; text-transform: uppercase; color: var(--text-dim); font-weight: 700;">
+                Localisation</div>
+              <div style="font-size: 0.95rem; font-weight: 600; color: var(--text-main);">Meknès, Maroc</div>
+            </div>
+          </div>
+
+          <!-- Direct Download CV Button in Contact -->
+          <a href="assets/CV_Sahli_Reda.pdf" download="CV_Sahli_Reda.pdf" class="btn-pill-download"
+            style="margin-top: 10px; justify-content: center;">
+            <i class="ph-bold ph-download-simple"></i>
+            <span>Télécharger Mon CV (PDF)</span>
+          </a>
+        </div>
+
+        <!-- Contact Form -->
+        <form class="contact-form-side" id="contactForm">
+          <input type="hidden" name="access_key" value="f982af88-c897-47cf-b15e-fd66a61dd36b">
+          <input type="hidden" name="from_name" value="Portfolio Sahli Reda - Visiteur">
+
+          <div class="form-split-row">
+            <div>
+              <input type="text" name="Name" class="input-field" placeholder="Votre Nom *" required>
+            </div>
+            <div>
+              <input type="text" name="Company" class="input-field" placeholder="Entreprise / Organisation">
+            </div>
+          </div>
+
+          <div class="form-split-row">
+            <div>
+              <input type="email" name="E-mail" class="input-field" placeholder="Adresse Email *" required>
+            </div>
+            <div>
+              <input type="tel" name="Phone" class="input-field" placeholder="Numéro de Téléphone">
+            </div>
+          </div>
+
+          <div>
+            <textarea name="Message" class="textarea-field" placeholder="Votre Message *" required></textarea>
+          </div>
+
+          <div id="formFeedback" class="form-alert-msg"></div>
+
+          <button type="submit" id="submitBtn" class="btn-pill-download"
+            style="border-radius: var(--radius-md); justify-content: center;">
+            <span>Envoyer le Message</span>
+            <i class="ph-bold ph-paper-plane-tilt"></i>
+          </button>
+        </form>
+
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <p>&copy; 2026 Sahli Reda. Tous droits réservés.</p>
+    </footer>
+
+  </div>
+
+  <!-- PROJECT DETAILS MODAL -->
+  <div id="projectModal" class="modal-overlay" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <button id="modalCloseBtn" class="modal-close-btn" aria-label="Fermer la boîte">
+        <i class="ph-bold ph-x"></i>
+      </button>
+      <div id="modalDetails">
+        <!-- Injected dynamically via JS -->
+      </div>
     </div>
+  </div>
 
-    <!-- Load Scripts Start -->
-    <script src="js/libs.min.js"></script>
-    <script>
-      const content = document.querySelector('body');
-      const imgLoad = imagesLoaded(content);
-      imgLoad.on('always', instance => {
-        setTimeout(() => {
-          document.getElementById("svgBackground").classList.add("loaded");
-        }, "1000");
-      });
-    </script>
-    <script src="js/app.js"></script>
-    <script src="js/gallery-init.js"></script>
-    <!-- Load Scripts End -->
-    
-  </body>
+  <!-- Main JavaScript File -->
+  <script src="js/main.js"></script>
+</body>
 
 </html>
