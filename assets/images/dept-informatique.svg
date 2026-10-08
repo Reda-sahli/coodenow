@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="dept-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16" />
+      <stop offset="50%" stop-color="#141d33" />
+      <stop offset="100%" stop-color="#0a0e1a" />
+    </linearGradient>
+    <linearGradient id="code-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#dept-bg)" rx="16"/>
+
+  <g transform="translate(80, 50)">
+    <!-- Browser Window Frame -->
+    <rect width="640" height="390" rx="12" fill="#101524" stroke="rgba(255,255,255,0.08)" stroke-width="1.5" />
+    <rect width="640" height="40" rx="12" fill="#192036" />
+    <circle cx="20" cy="20" r="5" fill="#ef4444" />
+    <circle cx="36" cy="20" r="5" fill="#f59e0b" />
+    <circle cx="52" cy="20" r="5" fill="#10b981" />
+    <text x="80" y="24" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="11" font-weight="600">fs-meknes.ac.ma/departement-informatique</text>
+
+    <!-- Header Banner Inside -->
+    <g transform="translate(30, 65)">
+      <rect width="580" height="90" rx="8" fill="rgba(99,102,241,0.15)" stroke="rgba(99,102,241,0.3)" />
+      <text x="25" y="35" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="16" font-weight="700">Département d’Informatique • Faculté des Sciences de Meknès</text>
+      <text x="25" y="60" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="12">Portail Officiel des Formations, Recherches, Syllabi &amp; Actualités Universitaires</text>
+
+      <!-- Code & Academic Module Grid -->
+      <g transform="translate(0, 110)">
+        <!-- Module 1 -->
+        <rect x="0" y="0" width="180" height="155" rx="8" fill="#171e33" stroke="rgba(255,255,255,0.06)" />
+        <rect x="15" y="15" width="36" height="36" rx="6" fill="rgba(6,182,212,0.2)" />
+        <text x="25" y="38" fill="#22d3ee" font-size="18">💻</text>
+        <text x="15" y="75" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="13" font-weight="600">Génie Logiciel &amp; Web</text>
+        <text x="15" y="98" fill="#64748b" font-family="-apple-system, sans-serif" font-size="10">Licence &amp; Master Pro</text>
+        <rect x="15" y="118" width="80" height="18" rx="4" fill="rgba(99,102,241,0.2)" />
+        <text x="22" y="131" fill="#818cf8" font-size="9" font-weight="600">En Savoir Plus →</text>
+
+        <!-- Module 2 -->
+        <rect x="200" y="0" width="180" height="155" rx="8" fill="#171e33" stroke="rgba(255,255,255,0.06)" />
+        <rect x="215" y="15" width="36" height="36" rx="6" fill="rgba(168,85,247,0.2)" />
+        <text x="225" y="38" fill="#c084fc" font-size="18">⚡</text>
+        <text x="215" y="75" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="13" font-weight="600">IA &amp; Data Science</text>
+        <text x="215" y="98" fill="#64748b" font-family="-apple-system, sans-serif" font-size="10">Algorithmes &amp; ML</text>
+        <rect x="215" y="118" width="80" height="18" rx="4" fill="rgba(168,85,247,0.2)" />
+        <text x="222" y="131" fill="#c084fc" font-size="9" font-weight="600">En Savoir Plus →</text>
+
+        <!-- Module 3 -->
+        <rect x="400" y="0" width="180" height="155" rx="8" fill="#171e33" stroke="rgba(255,255,255,0.06)" />
+        <rect x="415" y="15" width="36" height="36" rx="6" fill="rgba(16,185,129,0.2)" />
+        <text x="425" y="38" fill="#34d399" font-size="18">🔒</text>
+        <text x="415" y="75" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="13" font-weight="600">Réseaux &amp; Sécurité</text>
+        <text x="415" y="98" fill="#64748b" font-family="-apple-system, sans-serif" font-size="10">Cloud &amp; Infrastructure</text>
+        <rect x="415" y="118" width="80" height="18" rx="4" fill="rgba(16,185,129,0.2)" />
+        <text x="422" y="131" fill="#34d399" font-size="9" font-weight="600">En Savoir Plus →</text>
+      </g>
+    </g>
+  </g>
+</svg>

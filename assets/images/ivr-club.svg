@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="ivr-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#180b2c" />
+      <stop offset="50%" stop-color="#2d1254" />
+      <stop offset="100%" stop-color="#0f071c" />
+    </linearGradient>
+    <linearGradient id="purple-neon" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#c084fc" />
+      <stop offset="100%" stop-color="#f43f5e" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#ivr-bg)" rx="16"/>
+
+  <g transform="translate(400, 200)" text-anchor="middle">
+    <!-- Glowing 3D Tech Cube / Virtual Reality Emblem -->
+    <polygon points="0,-90 78,-45 78,45 0,90 -78,45 -78,-45" fill="rgba(192,132,252,0.15)" stroke="url(#purple-neon)" stroke-width="3" />
+    <line x1="0" y1="0" x2="0" y2="90" stroke="url(#purple-neon)" stroke-width="2" />
+    <line x1="0" y1="0" x2="78" y2="-45" stroke="url(#purple-neon)" stroke-width="2" />
+    <line x1="0" y1="0" x2="-78" y2="-45" stroke="url(#purple-neon)" stroke-width="2" />
+    
+    <circle cx="0" cy="0" r="14" fill="#f43f5e" />
+
+    <text x="0" y="145" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="28" font-weight="800" letter-spacing="2">IVR CLUB</text>
+    <text x="0" y="175" fill="#e9d5ff" font-family="-apple-system, sans-serif" font-size="14" font-weight="500">Student Innovation, Formation &amp; Web Development Hub</text>
+  </g>
+</svg>

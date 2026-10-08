@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-grad-1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#0a0c10" />
+    </linearGradient>
+    <linearGradient id="accent-cyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+    <linearGradient id="accent-indigo" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1" />
+      <stop offset="100%" stop-color="#a855f7" />
+    </linearGradient>
+    <filter id="glow-card" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="15" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bg-grad-1)" rx="16"/>
+
+  <!-- Subtle Grid Lines -->
+  <g stroke="rgba(255,255,255,0.04)" stroke-width="1">
+    <line x1="0" y1="100" x2="800" y2="100" />
+    <line x1="0" y1="200" x2="800" y2="200" />
+    <line x1="0" y1="300" x2="800" y2="300" />
+    <line x1="0" y1="400" x2="800" y2="400" />
+    <line x1="200" y1="0" x2="200" y2="500" />
+    <line x1="400" y1="0" x2="400" y2="500" />
+    <line x1="600" y1="0" x2="600" y2="500" />
+  </g>
+
+  <!-- App Window Container -->
+  <g transform="translate(60, 45)">
+    <!-- Window Shadow & Frame -->
+    <rect width="680" height="410" rx="14" fill="#131826" stroke="rgba(99,102,241,0.3)" stroke-width="1.5" />
+    
+    <!-- Window Top Header -->
+    <rect width="680" height="42" rx="14" fill="#1a2035" />
+    <circle cx="22" cy="21" r="5" fill="#ef4444" />
+    <circle cx="38" cy="21" r="5" fill="#f59e0b" />
+    <circle cx="54" cy="21" r="5" fill="#10b981" />
+    
+    <!-- Title / Breadcrumb -->
+    <text x="80" y="25" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="12" font-weight="600">Excel Clearance Express • Customs Logistics &amp; Invoicing ERP</text>
+    <rect x="560" y="10" width="100" height="22" rx="11" fill="rgba(16,185,129,0.15)" />
+    <text x="578" y="25" fill="#10b981" font-family="-apple-system, sans-serif" font-size="10" font-weight="700">● LIVE SYSTEM</text>
+
+    <!-- Sidebar Mini -->
+    <rect x="0" y="42" width="160" height="368" fill="#101422" />
+    <g transform="translate(15, 65)">
+      <!-- Nav items -->
+      <rect x="0" y="0" width="130" height="32" rx="6" fill="rgba(99,102,241,0.2)" />
+      <text x="35" y="20" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="11" font-weight="600">Dashboard</text>
+      <circle cx="18" cy="16" r="4" fill="#818cf8" />
+
+      <text x="35" y="60" fill="#64748b" font-family="-apple-system, sans-serif" font-size="11" font-weight="500">Customs Dossiers</text>
+      <circle cx="18" cy="56" r="4" fill="#64748b" />
+
+      <text x="35" y="100" fill="#64748b" font-family="-apple-system, sans-serif" font-size="11" font-weight="500">Invoices &amp; Taxes</text>
+      <circle cx="18" cy="96" r="4" fill="#64748b" />
+
+      <text x="35" y="140" fill="#64748b" font-family="-apple-system, sans-serif" font-size="11" font-weight="500">Clients &amp; Suppliers</text>
+      <circle cx="18" cy="136" r="4" fill="#64748b" />
+
+      <text x="35" y="180" fill="#64748b" font-family="-apple-system, sans-serif" font-size="11" font-weight="500">Fiscal Reports</text>
+      <circle cx="18" cy="176" r="4" fill="#64748b" />
+    </g>
+
+    <!-- Main Content Grid -->
+    <g transform="translate(180, 60)">
+      <!-- Metric Card 1 -->
+      <rect x="0" y="0" width="150" height="75" rx="8" fill="#171d2f" stroke="rgba(255,255,255,0.06)" />
+      <text x="14" y="24" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="10">Active Clearance</text>
+      <text x="14" y="52" fill="#38bdf8" font-family="-apple-system, sans-serif" font-size="20" font-weight="700">142 Files</text>
+
+      <!-- Metric Card 2 -->
+      <rect x="165" y="0" width="150" height="75" rx="8" fill="#171d2f" stroke="rgba(255,255,255,0.06)" />
+      <text x="179" y="24" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="10">Monthly Billing</text>
+      <text x="179" y="52" fill="#10b981" font-family="-apple-system, sans-serif" font-size="20" font-weight="700">842,500 DH</text>
+
+      <!-- Metric Card 3 -->
+      <rect x="330" y="0" width="150" height="75" rx="8" fill="#171d2f" stroke="rgba(255,255,255,0.06)" />
+      <text x="344" y="24" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="10">Tax Efficiency</text>
+      <text x="344" y="52" fill="#c084fc" font-family="-apple-system, sans-serif" font-size="20" font-weight="700">99.8%</text>
+
+      <!-- Chart / Visual Container -->
+      <rect x="0" y="90" width="480" height="235" rx="10" fill="#151b2a" stroke="rgba(255,255,255,0.06)" />
+      
+      <text x="16" y="115" fill="#f8fafc" font-family="-apple-system, sans-serif" font-size="12" font-weight="600">Transit Volume &amp; Clearance Throughput (2025 - 2026)</text>
+      
+      <!-- Chart Graphic -->
+      <path d="M 20 280 Q 80 230, 140 250 T 260 170 T 380 190 T 460 140 L 460 300 L 20 300 Z" fill="url(#glow-card)" opacity="0.15" />
+      <path d="M 20 280 Q 80 230, 140 250 T 260 170 T 380 190 T 460 140" fill="none" stroke="url(#accent-cyan)" stroke-width="3.5" />
+      
+      <!-- Points -->
+      <circle cx="140" cy="250" r="5" fill="#38bdf8" stroke="#ffffff" stroke-width="2" />
+      <circle cx="260" cy="170" r="5" fill="#6366f1" stroke="#ffffff" stroke-width="2" />
+      <circle cx="460" cy="140" r="6" fill="#10b981" stroke="#ffffff" stroke-width="2" />
+
+      <!-- Tech Stack Badges -->
+      <g transform="translate(16, 285)">
+        <rect x="0" y="0" width="85" height="22" rx="4" fill="rgba(99,102,241,0.2)" />
+        <text x="12" y="15" fill="#a5b4fc" font-family="-apple-system, sans-serif" font-size="10" font-weight="600">React 19 + Vite</text>
+
+        <rect x="95" y="0" width="75" height="22" rx="4" fill="rgba(6,182,212,0.2)" />
+        <text x="105" y="15" fill="#67e8f9" font-family="-apple-system, sans-serif" font-size="10" font-weight="600">Express.js</text>
+
+        <rect x="180" y="0" width="85" height="22" rx="4" fill="rgba(59,130,246,0.2)" />
+        <text x="190" y="15" fill="#93c5fd" font-family="-apple-system, sans-serif" font-size="10" font-weight="600">PostgreSQL</text>
+      </g>
+    </g>
+  </g>
+</svg>

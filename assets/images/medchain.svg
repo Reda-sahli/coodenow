@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="med-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#071a2c" />
+      <stop offset="50%" stop-color="#0f2b48" />
+      <stop offset="100%" stop-color="#061220" />
+    </linearGradient>
+    <linearGradient id="cyan-glow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe" />
+      <stop offset="100%" stop-color="#4facfe" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#med-bg)" rx="16"/>
+
+  <g transform="translate(400, 200)" text-anchor="middle">
+    <!-- Blockchain Hexagon & Medical Cross Shield -->
+    <polygon points="0,-100 86,-50 86,50 0,100 -86,50 -86,-50" fill="none" stroke="url(#cyan-glow)" stroke-width="4" />
+    <polygon points="0,-80 69,-40 69,40 0,80 -69,40 -69,-40" fill="rgba(15,43,72,0.6)" stroke="rgba(0,242,254,0.3)" stroke-width="2" />
+    
+    <!-- Medical Cross with Glow -->
+    <path d="M -15 -45 L 15 -45 L 15 -15 L 45 -15 L 45 15 L 15 15 L 15 45 L -15 45 L -15 15 L -45 15 L -45 -15 L -15 -15 Z" fill="url(#cyan-glow)" />
+
+    <!-- Connected Blockchain Nodes -->
+    <circle cx="-130" cy="-70" r="10" fill="#00f2fe" />
+    <line x1="-86" y1="-50" x2="-130" y2="-70" stroke="#00f2fe" stroke-width="2" stroke-dasharray="4,4" />
+
+    <circle cx="130" cy="-70" r="10" fill="#00f2fe" />
+    <line x1="86" y1="-50" x2="130" y2="-70" stroke="#00f2fe" stroke-width="2" stroke-dasharray="4,4" />
+
+    <circle cx="-130" cy="70" r="10" fill="#00f2fe" />
+    <line x1="-86" y1="50" x2="-130" y2="70" stroke="#00f2fe" stroke-width="2" stroke-dasharray="4,4" />
+
+    <circle cx="130" cy="70" r="10" fill="#00f2fe" />
+    <line x1="86" y1="50" x2="130" y2="70" stroke="#00f2fe" stroke-width="2" stroke-dasharray="4,4" />
+
+    <!-- Brand Typography -->
+    <text x="0" y="150" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="32" font-weight="800" letter-spacing="3">MEDCHAIN</text>
+    <text x="0" y="180" fill="#7dd3fc" font-family="-apple-system, sans-serif" font-size="14" font-weight="500">Decentralized Healthcare &amp; EHR Security System</text>
+  </g>
+</svg>
